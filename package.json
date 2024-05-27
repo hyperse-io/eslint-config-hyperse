@@ -1,5 +1,5 @@
 {
-  "name": "@hyperse-io/eslint-config-hyperse",
+  "name": "@hyperse/eslint-config-hyperse",
   "version": "1.0.0",
   "description": "🛠 These are settings for TypeScript / ESLint / Prettier in a project",
   "keywords": [
@@ -51,7 +51,7 @@
     "build": "rimraf dist && tsc -p ./tsconfig.build.json ",
     "clean": "rimraf --no-glob ./dist ./coverage ./.eslintcache ./tsconfig.tsbuildinfo",
     "test": "vitest run",
-    "lint": "tsc --noEmit && eslint .",
+    "lint": "yarn run typecheck && eslint .",
     "lint:fix": "npm run lint -- --fix",
     "typecheck": "tsc --project ./tsconfig.json --noEmit",
     "lint-staged-files": "lint-staged --allow-empty",

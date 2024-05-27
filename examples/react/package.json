@@ -7,7 +7,7 @@
     "lint": "eslint . --ext .ts,.mts,.tsx,.js,.jsx,.cjs,.mjs --cache --cache-location ../../.cache/eslint/commander.eslintcache"
   },
   "dependencies": {
-    "@hyperse-io/eslint-config-hyperse": "workspace:*"
+    "@hyperse/eslint-config-hyperse": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "20.12.11",

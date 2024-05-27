@@ -8,7 +8,7 @@
     "noEmit": false,
     "incremental": true,
     "paths": {
-      "@hyperse-io/eslint-config-hyperse": ["../../src/index.ts"]
+      "@hyperse/eslint-config-hyperse": ["../../src/index.ts"]
     },
     "types": ["vitest/globals"]
   },

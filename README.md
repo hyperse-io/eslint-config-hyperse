@@ -1,4 +1,4 @@
-# @hyperse-io/eslint-config-hyperse
+# @hyperse/eslint-config-hyperse
 
 🛠 These are my settings for TypeScript / ESLint / Prettier in a project, also support mono / esm 📦
 
@@ -6,7 +6,7 @@ These are the ESLint and Prettier settings for a Next.js project ⚡️
 
 # Table of Contents
 
-- [Eslint / Prettier Setup of @hyperse-io 📦](#eslint--prettier-setup-of-hyperse)
+- [Eslint / Prettier Setup of @hyperse 📦](#eslint--prettier-setup-of-hyperse)
 - [Table of Contents](#table-of-contents)
   - [What it does](#what-it-does)
   - [Local / Per Project Install](#local--per-project-install)
@@ -30,15 +30,15 @@ These are the ESLint and Prettier settings for a Next.js project ⚡️
 2. Then we need to install the config:
 
 ```
-npm i -D @hyperse-io/eslint-config-hyperse
+npm i -D @hyperse/eslint-config-hyperse
 ```
 
 1. Create a `eslint.config.js` file in the root of your project's directory (it should live where package.json does). Your `eslint.config.js` file should look like this:
 
-2. Extends your config with the minimal base of `@hyperse-io` config :
+2. Extends your config with the minimal base of `@hyperse` config :
 
 ```ts
-import { base, defineConfig } from '@hyperse-io/eslint-config-hyperse';
+import { base, defineConfig } from '@hyperse/eslint-config-hyperse';
 
 export default defineConfig([
   // ...typescript
@@ -69,7 +69,7 @@ You can add two scripts to your package.json to lint and/or fix your code:
 You can also add additional rules for Next.js
 
 ```ts
-import { base, nextjs, defineConfig } from '@hyperse-io/eslint-config-hyperse';
+import { base, nextjs, defineConfig } from '@hyperse/eslint-config-hyperse';
 
 export default defineConfig([
   // ...typescript
@@ -88,7 +88,7 @@ export default defineConfig([
 You can also add additional rules for only React.js ecosystem (without Next.js).
 
 ```ts
-import { base, nextjs, defineConfig } from '@hyperse-io/eslint-config-hyperse';
+import { base, nextjs, defineConfig } from '@hyperse/eslint-config-hyperse';
 
 export default defineConfig([
   // ...typescript

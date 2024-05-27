@@ -1,1 +1,1 @@
-# @hyperse-io/eslint-config-hyperse
+# @hyperse/eslint-config-hyperse
