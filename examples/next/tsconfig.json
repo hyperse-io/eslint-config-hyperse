@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "noImplicitAny": false,
+    "allowJs": false,
+    "noEmit": false,
+    "incremental": true,
+    "paths": {
+      "@hyperse-io/eslint-config-hyperse": [
+        "../../src/index.ts"
+      ]
+    },
+    "types": [
+      "vitest/globals"
+    ],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "isolatedModules": true,
+    "jsx": "preserve"
+  },
+  "exclude": [
+    "**/node_modules",
+    "**/.*/",
+    "dist",
+    "build"
+  ],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ]
+}

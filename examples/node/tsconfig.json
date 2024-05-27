@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "noImplicitAny": false,
+    "allowJs": false,
+    "noEmit": false,
+    "incremental": true,
+    "paths": {
+      "@hyperse-io/eslint-config-hyperse": ["../../src/index.ts"]
+    },
+
+    "types": ["vitest/globals"]
+  },
+  "exclude": ["**/node_modules", "**/.*/", "dist", "build"]
+}

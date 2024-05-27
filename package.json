@@ -1,0 +1,125 @@
+{
+  "name": "@hyperse-io/eslint-config-hyperse",
+  "version": "1.0.0",
+  "description": "🛠 These are settings for TypeScript / ESLint / Prettier in a project",
+  "keywords": [
+    "hyperse",
+    "esm",
+    "javascript",
+    "ecmascript",
+    "typescript",
+    "eslint",
+    "config",
+    "prettier"
+  ],
+  "homepage": "git@github.com:hyperse-io/eslint-config-hyperse.git",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:hyperse-io/eslint-config-hyperse.git"
+  },
+  "author": {
+    "name": "Yingchun Tian",
+    "url": "https://github.com/tianyingchun"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./base": {
+      "import": "./dist/main/base.js",
+      "types": "./dist/main/base.d.ts"
+    },
+    "./reactjs": {
+      "import": "./dist/main/reactjs.js",
+      "types": "./dist/main/reactjs.d.ts"
+    },
+    "./nextjs": {
+      "import": "./dist/main/nextjs.js",
+      "types": "./dist/main/nextjs.d.ts"
+    },
+    "./package.json": "./package.json"
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "./dist/",
+    "./index.js",
+    "./tsconfig.base.json"
+  ],
+  "scripts": {
+    "build": "rimraf dist && tsc -p ./tsconfig.build.json ",
+    "clean": "rimraf --no-glob ./dist ./coverage ./.eslintcache ./tsconfig.tsbuildinfo",
+    "test": "vitest run",
+    "lint": "tsc --noEmit && eslint .",
+    "lint:fix": "npm run lint -- --fix",
+    "typecheck": "tsc --project ./tsconfig.json --noEmit",
+    "lint-staged-files": "lint-staged --allow-empty",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "yarn run build && changeset publish",
+    "cz": "cz",
+    "husky": "is-ci || husky"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "@eslint/js": "^9.3.0",
+    "@next/eslint-plugin-next": "^14.2.3",
+    "app-root-path": "^3.1.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-define-config": "^2.1.0",
+    "eslint-plugin-mdx": "^3.1.5",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-regexp": "^2.6.0",
+    "eslint-plugin-simple-import-sort": "^12.1.0",
+    "eslint-plugin-sonarjs": "^1.0.3",
+    "eslint-plugin-tailwindcss": "^3.17.0",
+    "eslint-plugin-vitest": "^0.5.4",
+    "get-tsconfig": "^4.7.5",
+    "prettier": "^3.2.5",
+    "tailwindcss": "^3.4.3",
+    "typescript-eslint": "^8.0.0-alpha.16"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "0.5.0",
+    "@changesets/cli": "2.27.3",
+    "@commitlint/cli": "19.3.0",
+    "@commitlint/config-conventional": "19.2.2",
+    "@swc/core": "^1.5.7",
+    "@types/eslint__js": "^8.42.3",
+    "@types/node": "20.12.12",
+    "@types/prettier": "3.0.0",
+    "@types/shell-quote": "1.7.5",
+    "commitizen": "4.3.0",
+    "cz-conventional-changelog": "3.3.0",
+    "dotenv": "16.4.5",
+    "eslint": "^9.3.0",
+    "husky": "9.0.11",
+    "is-ci": "3.0.1",
+    "lint-staged": "15.2.5",
+    "minimist": "1.2.8",
+    "npm-run-all": "4.1.5",
+    "prettier": "3.2.5",
+    "rimraf": "5.0.7",
+    "shell-quote": "1.8.1",
+    "swc-unplugin-ts": "1.0.3",
+    "terser": "5.31.0",
+    "typescript": "5.4.5",
+    "vite-tsconfig-paths": "4.3.2",
+    "vitest": "1.6.0"
+  },
+  "peerDependencies": {
+    "eslint": "^9.3.0",
+    "typescript": "^5.4.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "packageManager": "yarn@4.2.2"
+}
