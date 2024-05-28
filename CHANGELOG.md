@@ -1,5 +1,11 @@
 # @hyperse/eslint-config-hyperse
 
+## 1.0.3
+
+### Patch Changes
+
+- [`6526b6a`](https://github.com/hyperse-io/eslint-config-hyperse/commit/6526b6ab05535b0329be7b170d818eca05481aa8) Thanks [@tianyingchun](https://github.com/tianyingchun)! - update default ignore patterns
+
 ## 1.0.2
 
 ### Patch Changes
