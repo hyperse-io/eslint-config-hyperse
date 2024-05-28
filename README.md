@@ -69,11 +69,10 @@ You can add two scripts to your package.json to lint and/or fix your code:
 You can also add additional rules for Next.js
 
 ```ts
-import { base, nextjs, defineConfig } from '@hyperse/eslint-config-hyperse';
+import { nextjs, defineConfig } from '@hyperse/eslint-config-hyperse';
 
 export default defineConfig([
   // ...typescript
-  ...base,
   ...nextjs,
   {
     rules: {
@@ -88,11 +87,10 @@ export default defineConfig([
 You can also add additional rules for only React.js ecosystem (without Next.js).
 
 ```ts
-import { base, nextjs, defineConfig } from '@hyperse/eslint-config-hyperse';
+import { nextjs, defineConfig } from '@hyperse/eslint-config-hyperse';
 
 export default defineConfig([
   // ...typescript
-  ...base,
   ...reactjs,
   {
     rules: {
