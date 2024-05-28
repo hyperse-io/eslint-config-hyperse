@@ -51,6 +51,10 @@ jobs:
       - name: 📥 Install Dependencies
         run: yarn --frozen-lockfile
 
+      - name: Build
+        run: |
+          yarn build
+
       - name: Linter
         run: |
           yarn lint
@@ -59,6 +63,3 @@ jobs:
         run: |
           yarn test
 
-      - name: Build
-        run: |
-          yarn build

@@ -52,7 +52,7 @@
     "build": "rimraf dist && tsc -p ./tsconfig.build.json ",
     "clean": "rimraf --no-glob ./dist ./coverage ./.eslintcache ./tsconfig.tsbuildinfo",
     "test": "vitest run",
-    "lint": "yarn run typecheck && eslint .",
+    "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
     "typecheck": "tsc --project ./tsconfig.json --noEmit",
     "lint-staged-files": "lint-staged --allow-empty",
