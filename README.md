@@ -1,5 +1,23 @@
 # @hyperse/eslint-config-hyperse
 
+<p align="left">
+  <a aria-label="Build" href="https://github.com/hyperse-io/eslint-config-hyperse/actions?query=workflow%3ACI">
+    <img alt="build" src="https://img.shields.io/github/actions/workflow/status/hyperse-io/eslint-config-hyperse/ci-integrity.yml?branch=main&label=ci&logo=github&style=flat-quare&labelColor=000000" />
+  </a>
+  <a aria-label="stable version" href="https://www.npmjs.com/package/@hyperse/eslint-config-hyperse">
+    <img alt="stable version" src="https://img.shields.io/npm/v/%40hyperse%2Feslint-config-hyperse?branch=main&label=version&logo=npm&style=flat-quare&labelColor=000000" />
+  </a>
+  <a>
+    <img alt="LoC" src="https://img.shields.io/bundlephobia/min/%40hyperse%2Feslint-config-hyperse?style=flat-quare&labelColor=000000" />
+  </a>
+  <a aria-label="Top language" href="https://github.com/hyperse-io/eslint-config-hyperse/search?l=typescript">
+    <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/hyperse-io/eslint-config-hyperse?style=flat-square&labelColor=000&color=blue">
+  </a>
+  <a aria-label="Licence" href="https://github.com/hyperse-io/eslint-config-hyperse/blob/main/LICENSE">
+    <img alt="Licence" src="https://img.shields.io/github/license/hyperse-io/eslint-config-hyperse?style=flat-quare&labelColor=000000" />
+  </a>
+</p>
+
 🛠 These are my settings for TypeScript / ESLint / Prettier in a project, also support mono / esm 📦
 
 These are the ESLint and Prettier settings for a Next.js project ⚡️
