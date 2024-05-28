@@ -8,7 +8,7 @@
     <img alt="stable version" src="https://img.shields.io/npm/v/%40hyperse%2Feslint-config-hyperse?branch=main&label=version&logo=npm&style=flat-quare&labelColor=000000" />
   </a>
   <a>
-    <img alt="LoC" src="https://img.shields.io/bundlephobia/min/%40hyperse%2Feslint-config-hyperse?style=flat-quare&labelColor=000000" />
+    <img alt="LoC" src="https://img.shields.io/bundlephobia/min/%40hyperse%2Feslint-config-hyperse" />
   </a>
   <a aria-label="Top language" href="https://github.com/hyperse-io/eslint-config-hyperse/search?l=typescript">
     <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/hyperse-io/eslint-config-hyperse?style=flat-square&labelColor=000&color=blue">
@@ -29,6 +29,7 @@ These are the ESLint and Prettier settings for a Next.js project ⚡️
   - [What it does](#what-it-does)
   - [Local / Per Project Install](#local--per-project-install)
   - [Scripts](#scripts)
+  - [Extends tsconfig.json](#extends-tsconfigjson)
   - [If you use Next.js](#if-you-use-nextjs)
   - [If you use React.js](#if-you-use-reactjs)
   - [If you use VS Code](#if-you-use-vs-code)
@@ -67,6 +68,41 @@ export default defineConfig([
     },
   },
 ]);
+```
+
+### Extends tsconfig.json
+
+you can write you `tsconfig.json` via extends `@hyperse/eslint-config-hyperse/tsconfig.base.json`
+
+```json
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@hyperse/eslint-config-hyperse/tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "rootDir": ".",
+    "outDir": "dist",
+    "types": ["vitest/globals"],
+    "paths": {}
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+}
+```
+
+write you `tsconfig.build.json` as below
+
+```json
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "baseUrl": "./",
+    "incremental": false,
+    "paths": {}
+  },
+  "exclude": ["**/*.stories.tsx", "**/*.stories.mdx", ".storybook/**", "dist"]
+}
 ```
 
 ### Scripts

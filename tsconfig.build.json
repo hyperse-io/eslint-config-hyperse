@@ -2,12 +2,13 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "incremental": false,
-    "moduleResolution": "nodenext",
     "declaration": true,
     "sourceMap": false,
     "outDir": "./dist",
     "rootDir": "./src",
     "baseUrl": "./"
   },
-  "include": ["./src/*.ts"]
+  "include": [
+    "./src/*.ts"
+  ]
 }

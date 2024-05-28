@@ -39,6 +39,7 @@
       "import": "./dist/main/nextjs.js",
       "types": "./dist/main/nextjs.d.ts"
     },
+    "./tsconfig.base.json": "./tsconfig.base.json",
     "./package.json": "./package.json"
   },
   "types": "./dist/index.d.ts",
