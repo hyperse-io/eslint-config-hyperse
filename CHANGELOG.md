@@ -1,5 +1,11 @@
 # @hyperse/eslint-config-hyperse
 
+## 1.0.4
+
+### Patch Changes
+
+- [`55d37a9`](https://github.com/hyperse-io/eslint-config-hyperse/commit/55d37a990c911af66ab12f12069d90997977134c) Thanks [@tianyingchun](https://github.com/tianyingchun)! - update `package.json` include `tsconfig.base.json`
+
 ## 1.0.3
 
 ### Patch Changes
