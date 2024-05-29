@@ -1,5 +1,11 @@
 # @hyperse/eslint-config-hyperse
 
+## 1.0.5
+
+### Patch Changes
+
+- [`03a3b08`](https://github.com/hyperse-io/eslint-config-hyperse/commit/03a3b082d5b13a43f5281d4b6f0ba765dab07de9) Thanks [@tianyingchun](https://github.com/tianyingchun)! - split `globals` to specficied plugin
+
 ## 1.0.4
 
 ### Patch Changes
