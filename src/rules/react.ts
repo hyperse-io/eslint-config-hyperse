@@ -1,12 +1,20 @@
 import { defineFlatConfig } from 'eslint-define-config';
 import pluginReact from 'eslint-plugin-react';
 import pluginReactHooks from 'eslint-plugin-react-hooks';
+import globals from 'globals';
 
 const reactPatterns = {
   files: ['*.{jsx,tsx}'],
 };
 
 export const react = defineFlatConfig([
+  {
+    languageOptions: {
+      globals: {
+        ...globals.browser,
+      },
+    },
+  },
   {
     ...pluginReact.configs.recommended,
     files: reactPatterns.files,

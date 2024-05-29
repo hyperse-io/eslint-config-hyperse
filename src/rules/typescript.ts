@@ -10,8 +10,6 @@ export const typescript = defineFlatConfig(
       languageOptions: {
         globals: {
           ...globals.node,
-          ...globals.browser,
-          ...globals.es2020,
         },
       },
     },
