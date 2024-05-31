@@ -1,5 +1,11 @@
 # @hyperse/eslint-config-hyperse
 
+## 1.0.6
+
+### Patch Changes
+
+- [`c944513`](https://github.com/hyperse-io/eslint-config-hyperse/commit/c944513ce3931ec17210d32db94f669ee3339a47) Thanks [@tianyingchun](https://github.com/tianyingchun)! - switch bundler to `tsup`
+
 ## 1.0.5
 
 ### Patch Changes
