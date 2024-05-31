@@ -50,8 +50,8 @@ npm i -D @hyperse/eslint-config-hyperse
 ```
 
 1. Create a `eslint.config.js` file in the root of your project's directory (it should live where package.json does). Your `eslint.config.js` file should look like this:
-
-2. Extends your config with the minimal base of `@hyperse` config :
+2. if you are using `commonjs`, just change `eslint.config.js` to `eslint.config.mjs`
+3. Extends your config with the minimal base of `@hyperse` config :
 
 ```ts
 import { base, defineConfig } from '@hyperse/eslint-config-hyperse';
