@@ -1,5 +1,11 @@
 # @hyperse/eslint-config-hyperse
 
+## 1.0.7
+
+### Patch Changes
+
+- [`9f114e2`](https://github.com/hyperse-io/eslint-config-hyperse/commit/9f114e2f292010a31870aeb3b366653f70baa3d1) Thanks [@tianyingchun](https://github.com/tianyingchun)! - bump version, add `.out`to default ignores
+
 ## 1.0.6
 
 ### Patch Changes
