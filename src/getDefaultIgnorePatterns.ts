@@ -8,6 +8,7 @@ export const getDefaultIgnorePatterns = (ignores: string[] = []) => {
     '**/.github',
     '**/.husky',
     '**/.yarn',
+    '**/.out',
     '**/.next',
     '**/_release',
     '**/.cache',
