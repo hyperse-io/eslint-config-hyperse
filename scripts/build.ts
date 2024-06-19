@@ -2,7 +2,7 @@ import { existsSync } from 'fs';
 import { rm } from 'fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import type { Format } from 'tsup';
+import type { Format, Options } from 'tsup';
 import { build } from 'tsup';
 
 const getDirname = (url: string, subDir = '') => {
@@ -10,41 +10,41 @@ const getDirname = (url: string, subDir = '') => {
 };
 
 async function buildAll() {
-  const entries = {
+  const entries: Record<string, Options & { outputEntry: string }> = {
     'src/index.ts': {
-      format: ['esm'],
-      entry: 'index',
+      format: ['esm', 'cjs'],
+      outputEntry: 'index',
       dts: true,
       clean: true,
     },
     'src/main/base.ts': {
       format: ['esm'],
-      entry: 'main/base',
+      outputEntry: 'main/base',
       dts: true,
       clean: false,
     },
     'src/main/nextjs.ts': {
       format: ['esm'],
-      entry: 'main/nextjs',
+      outputEntry: 'main/nextjs',
       dts: true,
       clean: false,
     },
     'src/main/reactjs.ts': {
       format: ['esm'],
-      entry: 'main/reactjs',
+      outputEntry: 'main/reactjs',
       dts: true,
       clean: false,
     },
   };
 
   for (const [key, value] of Object.entries(entries)) {
-    const { format, entry, dts, clean } = value;
+    const { format, outputEntry, dts, clean } = value;
     await build({
       splitting: false,
       treeshake: true,
       tsconfig: './tsconfig.build.json',
       entry: {
-        [entry]: key,
+        [outputEntry]: key,
       },
       dts,
       clean,
