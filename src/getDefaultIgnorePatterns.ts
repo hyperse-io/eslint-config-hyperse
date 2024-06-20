@@ -16,6 +16,7 @@ export const getDefaultIgnorePatterns = (ignores: string[] = []) => {
     '**/dist',
     '**/public',
     '**/.storybook',
+    '**/.vscode-test',
     '**/storybook-static',
     ...ignores,
   ];
