@@ -166,6 +166,17 @@ Once you have done. You probably want your editor to lint and fix for you.
     "source.fixAll": "explicit",
     "source.organizeImports": "never"
   },
-  "eslint.experimental.useFlatConfig": true
+  "eslint.experimental.useFlatConfig": true,
+
+  "[jsonc]": {
+    "editor.formatOnSave": false,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  "[json]": {
+    "editor.formatOnSave": false,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  }
 }
 ```

@@ -8,7 +8,6 @@ import {
   typescript,
   vitest,
 } from '../rules/index.js';
-import { jsonc } from '../rules/jsonc.js';
 
 export const base = defineFlatConfig([
   ...typescript,
@@ -17,6 +16,5 @@ export const base = defineFlatConfig([
   ...prettier,
   ...regexp,
   ...sonar,
-  ...jsonc,
   ...mdx,
 ]);

@@ -11,4 +11,11 @@ export const prettier = defineFlatConfig([
       'prettier/prettier': ['error', prettierConfig],
     },
   },
+  {
+    files: ['**/*.json'],
+    rules: {
+      'prettier/prettier': ['error', prettierConfig],
+      '@typescript-eslint/no-unused-expressions': 'off',
+    },
+  },
 ]);

@@ -23,10 +23,5 @@
     "rootDir": ".",
     "outDir": "dist"
   },
-  "exclude": [
-    "**/node_modules",
-    "**/.*/",
-    "dist",
-    "build"
-  ]
+  "exclude": ["**/node_modules", "**/.*/", "dist", "build"]
 }

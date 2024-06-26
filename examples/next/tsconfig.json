@@ -8,30 +8,13 @@
     "noEmit": false,
     "incremental": true,
     "paths": {
-      "@hyperse/eslint-config-hyperse": [
-        "../../src/index.ts"
-      ]
+      "@hyperse/eslint-config-hyperse": ["../../src/index.ts"]
     },
-    "types": [
-      "vitest/globals"
-    ],
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "types": ["vitest/globals"],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "isolatedModules": true,
     "jsx": "preserve"
   },
-  "exclude": [
-    "**/node_modules",
-    "**/.*/",
-    "dist",
-    "build"
-  ],
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
-  ]
+  "exclude": ["**/node_modules", "**/.*/", "dist", "build"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
 }

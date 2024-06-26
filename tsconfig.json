@@ -8,15 +8,7 @@
     "noEmit": false,
     "incremental": true,
     "paths": {},
-    "types": [
-      "@types/node",
-      "vitest/globals"
-    ]
+    "types": ["@types/node", "vitest/globals"]
   },
-  "exclude": [
-    "**/node_modules",
-    "**/.*/",
-    "dist",
-    "build",
-  ]
+  "exclude": ["**/node_modules", "**/.*/", "dist", "build"]
 }
