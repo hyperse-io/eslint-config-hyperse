@@ -180,3 +180,21 @@ Once you have done. You probably want your editor to lint and fix for you.
   }
 }
 ```
+
+## Notes
+
+we need to disable vscode editor language formatter for `json, jsonc`
+
+```json:settings.json
+  "[jsonc]": {
+    "editor.formatOnSave": false,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  "[json]": {
+    "editor.formatOnSave": false,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  }
+
+```

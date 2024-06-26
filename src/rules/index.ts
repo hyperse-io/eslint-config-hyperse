@@ -1,4 +1,5 @@
 export * from './imports.js';
+export * from './jsonc.js';
 export * from './mdx.js';
 export * from './next.js';
 export * from './prettier.js';

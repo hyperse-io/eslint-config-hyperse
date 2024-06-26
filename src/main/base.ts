@@ -1,6 +1,7 @@
 import { defineFlatConfig } from 'eslint-define-config';
 import {
   imports,
+  jsonc,
   mdx,
   prettier,
   regexp,
@@ -16,5 +17,6 @@ export const base = defineFlatConfig([
   ...prettier,
   ...regexp,
   ...sonar,
+  ...jsonc,
   ...mdx,
 ]);
