@@ -1,5 +1,17 @@
 # @hyperse/eslint-config-hyperse
 
+## 1.0.10
+
+### Patch Changes
+
+- [`edb6b81`](https://github.com/hyperse-io/eslint-config-hyperse/commit/edb6b819ebdcb27035488f94d004be4784f893c9) Thanks [@tianyingchun](https://github.com/tianyingchun)! - add jsonc plugin for json, jsonc lint
+
+- [`253ed96`](https://github.com/hyperse-io/eslint-config-hyperse/commit/253ed96393b4797c6cfbff4bfc6df9e91dff96aa) Thanks [@tianyingchun](https://github.com/tianyingchun)! - update prettier for json, jsonc
+
+- [`3889fa5`](https://github.com/hyperse-io/eslint-config-hyperse/commit/3889fa54f95ac04f68a4655cbc5bd93df2c8f14b) Thanks [@tianyingchun](https://github.com/tianyingchun)! - Add `.vscode-test` to ignore
+
+- [`58a2a16`](https://github.com/hyperse-io/eslint-config-hyperse/commit/58a2a164c58fec20bf0dc26c07cb204cb1045151) Thanks [@tianyingchun](https://github.com/tianyingchun)! - add jsonc plugin
+
 ## 1.0.9
 
 ### Patch Changes
