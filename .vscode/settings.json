@@ -12,13 +12,9 @@
     "*.css": "tailwindcss"
   },
   "[jsonc]": {
-    "editor.formatOnSave": false,
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true
+    "editor.formatOnSave": false
   },
   "[json]": {
-    "editor.formatOnSave": false,
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true
+    "editor.formatOnSave": false
   }
 }

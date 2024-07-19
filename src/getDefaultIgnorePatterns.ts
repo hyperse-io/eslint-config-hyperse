@@ -3,6 +3,8 @@ export const getDefaultIgnorePatterns = (ignores: string[] = []) => {
     // Hacky way to silence @yarnpkg/doctor about node_modules detection
     `**/${'node'}_modules`,
     '**/node_modules',
+    '**/.turbo',
+    '**/.docusaurus',
     '**/.cache',
     '**/.changeset',
     '**/.github',
