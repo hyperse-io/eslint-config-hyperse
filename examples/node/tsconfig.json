@@ -11,7 +11,7 @@
       "@hyperse/eslint-config-hyperse": ["../../src/index.ts"]
     },
 
-    "types": ["vitest/globals"]
+    "types": ["vitest/globals", "node"]
   },
   "exclude": ["**/node_modules", "**/.*/", "dist", "build"]
 }

@@ -10,7 +10,7 @@
     "paths": {
       "@hyperse/eslint-config-hyperse": ["../../src/index.ts"]
     },
-    "types": ["vitest/globals"],
+    "types": ["vitest/globals", "node"],
     "lib": ["dom", "dom.iterable", "esnext"],
     "isolatedModules": true,
     "jsx": "preserve"

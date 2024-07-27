@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const test = () => {
-  return <div className="ddd">hello world</div>;
+  return <div className="">hello world</div>;
 };
