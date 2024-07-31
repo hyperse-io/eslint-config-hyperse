@@ -1,5 +1,11 @@
 # @hyperse/eslint-config-hyperse
 
+## 1.0.12
+
+### Patch Changes
+
+- [`de99e38`](https://github.com/hyperse-io/eslint-config-hyperse/commit/de99e38e8753333af7e74cd3b6b23a41511c1453) Thanks [@tianyingchun](https://github.com/tianyingchun)! - improvecd base tsconfig.json
+
 ## 1.0.11
 
 ### Patch Changes
