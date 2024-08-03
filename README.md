@@ -115,6 +115,16 @@ You can add two scripts to your package.json to lint and/or fix your code:
 }
 ```
 
+````json
+{
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "npm run lint -- --fix",
+  }
+}
+// yarn lint --fix
+```
+
 ## If you use Next.js
 
 You can also add additional rules for Next.js
@@ -131,7 +141,7 @@ export default defineConfig([
     },
   },
 ]);
-```
+````
 
 ## If you use React.js
 
@@ -166,17 +176,11 @@ Once you have done. You probably want your editor to lint and fix for you.
     "source.fixAll": "explicit",
     "source.organizeImports": "never"
   },
-  "eslint.experimental.useFlatConfig": true,
-
   "[jsonc]": {
-    "editor.formatOnSave": false,
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true
+    "editor.formatOnSave": false
   },
   "[json]": {
-    "editor.formatOnSave": false,
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true
+    "editor.formatOnSave": false
   }
 }
 ```
@@ -187,14 +191,10 @@ we need to disable vscode editor language formatter for `json, jsonc`
 
 ```json:settings.json
   "[jsonc]": {
-    "editor.formatOnSave": false,
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true
+    "editor.formatOnSave": false
   },
   "[json]": {
-    "editor.formatOnSave": false,
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true
+    "editor.formatOnSave": false
   }
 
 ```
