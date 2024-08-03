@@ -115,14 +115,13 @@ You can add two scripts to your package.json to lint and/or fix your code:
 }
 ```
 
-````json
+```json
 {
   "scripts": {
     "lint": "eslint .",
-    "lint:fix": "npm run lint -- --fix",
+    "lint:fix": "npm run lint -- --fix"
   }
 }
-// yarn lint --fix
 ```
 
 ## If you use Next.js
@@ -141,7 +140,7 @@ export default defineConfig([
     },
   },
 ]);
-````
+```
 
 ## If you use React.js
 
