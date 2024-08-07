@@ -1,5 +1,15 @@
 # @hyperse/eslint-config-hyperse
 
+## 1.1.0
+
+### Minor Changes
+
+- [`096dce8`](https://github.com/hyperse-io/eslint-config-hyperse/commit/096dce8d3dc659dfebc40f009ba6b22efc16f419) Thanks [@tianyingchun](https://github.com/tianyingchun)! - bump version
+
+### Patch Changes
+
+- [`680cc8f`](https://github.com/hyperse-io/eslint-config-hyperse/commit/680cc8fcfe59980635fde2c74982dbd06510ed30) Thanks [@tianyingchun](https://github.com/tianyingchun)! - remove `vitest/valid-title`
+
 ## 1.0.12
 
 ### Patch Changes
