@@ -18,6 +18,7 @@ export const vitest = defineFlatConfig([
       // you can also modify rules' behavior using option like this
       'vitest/max-nested-describe': ['error', { max: 3 }],
       'vitest/no-disabled-tests': 2,
+      'vitest/valid-title': 'off',
       '@typescript-eslint/no-non-null-assertion': 'off',
       '@typescript-eslint/no-object-literal-type-assertion': 'off',
       '@typescript-eslint/no-empty-function': 'off',
