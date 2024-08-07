@@ -1,0 +1,84 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# and https://github.com/github/gitignore for examples
+
+# local env files (followinf dotenv-flow / nextjs convention)
+.env
+.env.local
+.env.*.local
+
+# security: atlassian/changeset
+
+**/.netrc
+
+# dependencies
+node_modules
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+
+# testing
+/coverage
+.out/
+
+# Build directories (next.js...)
+/.next/
+/out/
+/build
+/dist
+/build
+/_release
+/storybook-static
+
+# Cache
+**/tsconfig.tsbuildinfo
+**/.eslintcache
+.cache/*
+
+# Misc
+.DS_Store
+*.pem
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+# IDE
+.idea/*
+!.idea/modules.xml
+!.idea/armit.iml
+.project
+.classpath
+*.launch
+*.sublime-workspace
+
+
+# Docker overrides
+
+./docker-compose.override.yml
+
+# Deployment platforms
+
+.vercel
+
+src/custom-admin-ui/admin-ui
+src/plugins/typesense/typesense-data
+src/plugins/typesense/config.json
+static/email/test-emails
+node_modules
+
+# testing
+/coverage
+__data__
+
+# misc
+.DS_Store
+*.pem
+type-check.d.ts
+ports.json
+admin-ui

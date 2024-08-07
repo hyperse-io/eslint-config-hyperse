@@ -7,6 +7,9 @@
     "allowJs": false,
     "noEmit": false,
     "incremental": true,
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "Node",
     "paths": {
       "@hyperse/eslint-config-hyperse": ["../../src/index.ts"]
     },

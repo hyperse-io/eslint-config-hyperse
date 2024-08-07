@@ -129,7 +129,7 @@ You can add two scripts to your package.json to lint and/or fix your code:
 You can also add additional rules for Next.js
 
 ```ts
-import { nextjs, defineConfig } from '@hyperse/eslint-config-hyperse';
+import { defineConfig,nextjs } from '@hyperse/eslint-config-hyperse';
 
 export default defineConfig([
   // ...typescript
@@ -147,7 +147,7 @@ export default defineConfig([
 You can also add additional rules for only React.js ecosystem (without Next.js).
 
 ```ts
-import { nextjs, defineConfig } from '@hyperse/eslint-config-hyperse';
+import { defineConfig, reactjs } from '@hyperse/eslint-config-hyperse';
 
 export default defineConfig([
   // ...typescript
@@ -188,12 +188,13 @@ Once you have done. You probably want your editor to lint and fix for you.
 
 we need to disable vscode editor language formatter for `json, jsonc`
 
-```json:settings.json
+```json
+{ 
   "[jsonc]": {
     "editor.formatOnSave": false
   },
   "[json]": {
     "editor.formatOnSave": false
   }
-
+}
 ```

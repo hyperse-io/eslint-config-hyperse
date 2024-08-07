@@ -22,7 +22,6 @@ export const getDefaultIgnorePatterns = (ignores: string[] = []) => {
     '**/.vscode-test',
     '**/storybook-static',
     '**/miniprogram',
-    '**/.docusaurus',
     '**/.husky',
     ...ignores,
   ];
