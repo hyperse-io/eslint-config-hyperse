@@ -1,5 +1,11 @@
 # @hyperse/eslint-config-hyperse
 
+## 1.1.1
+
+### Patch Changes
+
+- [`00f439b`](https://github.com/hyperse-io/eslint-config-hyperse/commit/00f439b39179232677aac0ab933a302dcefe9312) Thanks [@tianyingchun](https://github.com/tianyingchun)! - bump add eslint-mdx back
+
 ## 1.1.0
 
 ### Minor Changes
