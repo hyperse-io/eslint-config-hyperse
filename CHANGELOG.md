@@ -1,5 +1,11 @@
 # @hyperse/eslint-config-hyperse
 
+## 1.1.2
+
+### Patch Changes
+
+- [`707fe97`](https://github.com/hyperse-io/eslint-config-hyperse/commit/707fe975cb427285eeae422032830843c0b61110) Thanks [@tianyingchun](https://github.com/tianyingchun)! - move `vitest-plugin` to @vitest/eslint-plugin
+
 ## 1.1.1
 
 ### Patch Changes
