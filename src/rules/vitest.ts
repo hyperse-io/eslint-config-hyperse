@@ -1,5 +1,5 @@
 import { defineFlatConfig } from 'eslint-define-config';
-import pluginVitest from 'eslint-plugin-vitest-2';
+import pluginVitest from '@vitest/eslint-plugin';
 
 const vitestPatterns = {
   files: ['**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
