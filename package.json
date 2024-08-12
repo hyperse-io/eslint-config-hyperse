@@ -70,7 +70,7 @@
   "dependencies": {
     "@eslint/js": "^9.9.0",
     "@next/eslint-plugin-next": "rc",
-    "@vitest/eslint-plugin": "^1.0.0",
+    "@vitest/eslint-plugin": "^1.0.1",
     "app-root-path": "^3.1.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-define-config": "^2.1.0",
