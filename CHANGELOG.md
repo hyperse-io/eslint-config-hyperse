@@ -1,5 +1,11 @@
 # @hyperse/eslint-config-hyperse
 
+## 1.1.3
+
+### Patch Changes
+
+- [`907c83c`](https://github.com/hyperse-io/eslint-config-hyperse/commit/907c83cd47567f4a9c13c06d0a5a0403188b6a38) Thanks [@tianyingchun](https://github.com/tianyingchun)! - disable `lintCodeBlocks`
+
 ## 1.1.2
 
 ### Patch Changes
