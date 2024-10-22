@@ -25,6 +25,7 @@
     "resolveJsonModule": true,
     "incremental": true,
     "declaration": true,
+    "isolatedModules": true,
     "newLine": "lf",
     "baseUrl": ".",
     "rootDir": ".",
