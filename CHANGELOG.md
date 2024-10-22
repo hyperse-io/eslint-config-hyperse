@@ -1,5 +1,11 @@
 # @hyperse/eslint-config-hyperse
 
+## 1.2.0
+
+### Minor Changes
+
+- [`b2908e0`](https://github.com/hyperse-io/eslint-config-hyperse/commit/b2908e0e4f6cea1eb15ea5c336ddead3e0dfb9a2) Thanks [@tianyingchun](https://github.com/tianyingchun)! - add `isolatedModules` as default tsconfig.base.json
+
 ## 1.1.3
 
 ### Patch Changes
