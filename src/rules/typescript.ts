@@ -1,4 +1,4 @@
-import { defineFlatConfig, FlatESLintConfig } from 'eslint-define-config';
+import { defineFlatConfig, type FlatESLintConfig } from 'eslint-define-config';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 import eslint from '@eslint/js';
