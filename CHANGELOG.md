@@ -1,5 +1,11 @@
 # @hyperse/eslint-config-hyperse
 
+## 1.2.1
+
+### Patch Changes
+
+- [`e878f0b`](https://github.com/hyperse-io/eslint-config-hyperse/commit/e878f0b60a2227a785de424ba169731d079bdb2a) Thanks [@tianyingchun](https://github.com/tianyingchun)! - add `verbatimModuleSyntax`:true
+
 ## 1.2.0
 
 ### Minor Changes
