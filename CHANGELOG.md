@@ -1,5 +1,11 @@
 # @hyperse/eslint-config-hyperse
 
+## 1.2.3
+
+### Patch Changes
+
+- [`a08429b`](https://github.com/hyperse-io/eslint-config-hyperse/commit/a08429be8a5dd0466cbb53b8d8fe176ea19992ae) Thanks [@tianyingchun](https://github.com/tianyingchun)! - Add `consistent-type-imports` rule
+
 ## 1.2.2
 
 ### Patch Changes
