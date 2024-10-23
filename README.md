@@ -198,5 +198,6 @@ we need to disable vscode editor language formatter for `json, jsonc`
   }
 }
 ```
-1. Isolated Modules -  isolatedModules (default:`true`)
 
+1. Isolated Modules - isolatedModules (default:`true`)
+2. Verbatim Module Syntax - verbatimModuleSyntax (default:`false`)
