@@ -16,7 +16,10 @@ export const defaults = defineFlatConfig([
           caughtErrorsIgnorePattern: '^_',
         },
       ],
-      '@typescript-eslint/consistent-type-imports': 'error',
+      '@typescript-eslint/consistent-type-imports': [
+        'error',
+        { disallowTypeAnnotations: false },
+      ],
     },
   } as FlatESLintConfig,
 ]);
