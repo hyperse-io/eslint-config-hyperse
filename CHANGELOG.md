@@ -1,5 +1,11 @@
 # @hyperse/eslint-config-hyperse
 
+## 1.2.5
+
+### Patch Changes
+
+- [`f4df143`](https://github.com/hyperse-io/eslint-config-hyperse/commit/f4df143659d36b7907a2c1056cab7e5441cb5b44) Thanks [@tianyingchun](https://github.com/tianyingchun)! - "strictPropertyInitialization": false
+
 ## 1.2.4
 
 ### Patch Changes
