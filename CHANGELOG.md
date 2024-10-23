@@ -1,5 +1,11 @@
 # @hyperse/eslint-config-hyperse
 
+## 1.2.4
+
+### Patch Changes
+
+- [`f3cd523`](https://github.com/hyperse-io/eslint-config-hyperse/commit/f3cd52327b93fc871ecf3e78e38e4b5ff171df0c) Thanks [@tianyingchun](https://github.com/tianyingchun)! - Allow `TypeAnnotations` @import
+
 ## 1.2.3
 
 ### Patch Changes
