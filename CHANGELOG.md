@@ -1,5 +1,11 @@
 # @hyperse/eslint-config-hyperse
 
+## 1.2.6
+
+### Patch Changes
+
+- [`6cacdb9`](https://github.com/hyperse-io/eslint-config-hyperse/commit/6cacdb9fa48b4144c23e52eae6441ea3e24ca9ff) Thanks [@tianyingchun](https://github.com/tianyingchun)! - support `import type` for nestjs
+
 ## 1.2.5
 
 ### Patch Changes
