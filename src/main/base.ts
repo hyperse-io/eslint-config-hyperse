@@ -9,7 +9,7 @@ import {
   typescript,
   vitest,
 } from '../rules/index.js';
-import { defaults } from './defaults.js';
+import { overrides } from './overrides.js';
 
 export const base = defineFlatConfig([
   ...typescript,
@@ -20,5 +20,5 @@ export const base = defineFlatConfig([
   ...sonar,
   ...jsonc,
   ...mdx,
-  ...defaults,
+  ...overrides,
 ]);

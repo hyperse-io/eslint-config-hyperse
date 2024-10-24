@@ -4,6 +4,7 @@
     "incremental": false,
     "declaration": true,
     "sourceMap": false,
+    "verbatimModuleSyntax": false,
     "outDir": "./dist",
     "rootDir": "./src",
     "baseUrl": "./"

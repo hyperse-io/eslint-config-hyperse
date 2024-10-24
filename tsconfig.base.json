@@ -26,7 +26,7 @@
     "incremental": true,
     "declaration": true,
     "isolatedModules": true,
-    "verbatimModuleSyntax": false,
+    "verbatimModuleSyntax": true,
     "newLine": "lf",
     "baseUrl": ".",
     "rootDir": ".",
