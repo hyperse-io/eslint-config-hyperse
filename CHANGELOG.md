@@ -1,5 +1,13 @@
 # @hyperse/eslint-config-hyperse
 
+## 1.2.7
+
+### Patch Changes
+
+- [`965ce7f`](https://github.com/hyperse-io/eslint-config-hyperse/commit/965ce7f5b33c6262592b283ebc1de5fb1d9e1754) Thanks [@tianyingchun](https://github.com/tianyingchun)! - bump version
+
+- [`22daa0c`](https://github.com/hyperse-io/eslint-config-hyperse/commit/22daa0c43f8a91a2ccbb2226cf71b7f319f1ce91) Thanks [@tianyingchun](https://github.com/tianyingchun)! - change `jsx` to `preserve`
+
 ## 1.2.6
 
 ### Patch Changes
