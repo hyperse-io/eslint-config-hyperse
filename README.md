@@ -201,3 +201,50 @@ we need to disable vscode editor language formatter for `json, jsonc`
 
 1. Isolated Modules - isolatedModules (default:`true`)
 2. Verbatim Module Syntax - verbatimModuleSyntax (default:`true`)
+
+## References
+
+- If you want to customize the prettier config, you may need to configure as below
+
+```ts
+import {
+  defineConfig,
+  getPrettierConfig,
+  reactjs,
+} from '@hyperse/eslint-config-hyperse';
+
+export default defineConfig([
+  ...reactjs,
+  {
+    rules: {
+      'prettier/prettier': [
+        'error',
+        { ...getPrettierConfig(), printWidth: 120 },
+      ],
+    },
+  },
+]);
+```
+
+- If you want to extends `tailwindcss` rules, you may need to configure as below
+
+```ts
+import { base, defineConfig } from '@hyperse/eslint-config-hyperse';
+
+export default defineConfig([
+  // ...typescript
+  ...base,
+  {
+    rules: {
+      '@typescript-eslint/no-explicit-any': 'off',
+      'tailwindcss/classnames-order': 'warn',
+      'tailwindcss/enforces-negative-arbitrary-values': 'warn',
+      'tailwindcss/enforces-shorthand': 'warn',
+      'tailwindcss/migration-from-tailwind-2': 'warn',
+      'tailwindcss/no-arbitrary-value': 'off',
+      'tailwindcss/no-custom-classname': 'warn',
+      'tailwindcss/no-contradicting-classname': 'error',
+    },
+  },
+]);
+```
