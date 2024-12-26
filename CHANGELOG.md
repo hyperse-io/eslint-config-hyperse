@@ -1,5 +1,11 @@
 # @hyperse/eslint-config-hyperse
 
+## 1.2.9
+
+### Patch Changes
+
+- [`306f4ac`](https://github.com/hyperse-io/eslint-config-hyperse/commit/306f4ace5b991218cc6049bd9b0f0ba694b16d24) Thanks [@tianyingchun](https://github.com/tianyingchun)! - bump version
+
 ## 1.2.8
 
 ### Patch Changes
