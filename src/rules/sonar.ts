@@ -27,6 +27,7 @@ export const sonar = defineFlatConfig([
       'sonarjs/no-identical-functions': 'error',
       'sonarjs/no-identical-expressions': 'error',
       'sonarjs/no-hook-setter-in-body': 'off',
+      'sonarjs/fixme-tag': 'warn',
     },
   },
 ]);

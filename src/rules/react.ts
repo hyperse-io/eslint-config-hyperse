@@ -22,6 +22,8 @@ export const react = defineFlatConfig([
       // https://github.com/hyperse-io/eslint-config-hyperse/blob/1e23efbfb64f4e5a8b0c6387d187b7f6341f1e61/src/rules/react.ts
       ...pluginReact.configs.flat.recommended.rules,
       'react/react-in-jsx-scope': 'off',
+      'react-hooks/exhaustive-deps': 'off',
+      'react/prop-types': 'off',
     },
   },
   {
