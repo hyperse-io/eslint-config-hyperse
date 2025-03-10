@@ -1,5 +1,11 @@
 # @hyperse/eslint-config-hyperse
 
+## 1.3.1
+
+### Patch Changes
+
+- [`c0184ed`](https://github.com/hyperse-io/eslint-config-hyperse/commit/c0184ed1a27734b3c77fb20566acf25199d039da) Thanks [@tianyingchun](https://github.com/tianyingchun)! - fix wrong eslint react import version
+
 ## 1.3.0
 
 ### Minor Changes
