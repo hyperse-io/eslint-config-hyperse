@@ -1,5 +1,11 @@
 # @hyperse/eslint-config-hyperse
 
+## 1.3.4
+
+### Patch Changes
+
+- [`fa9a5bf`](https://github.com/hyperse-io/eslint-config-hyperse/commit/fa9a5bf6968be86496a29721836d501501531570) Thanks [@tianyingchun](https://github.com/tianyingchun)! - remove `sonarjs` from base rules
+
 ## 1.3.3
 
 ### Patch Changes
