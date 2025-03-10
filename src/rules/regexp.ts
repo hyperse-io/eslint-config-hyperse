@@ -2,7 +2,7 @@ import { defineFlatConfig } from 'eslint-define-config';
 import regexpPlugin from 'eslint-plugin-regexp';
 
 const regexpPatterns = {
-  files: ['*.{js,jsx,jsx,tsx,mts,cts,mjs,cjs}'],
+  files: ['**/*.{js,jsx,jsx,tsx,mts,cts,mjs,cjs}'],
 };
 
 // @see https://github.com/ota-meshi/eslint-plugin-regexp

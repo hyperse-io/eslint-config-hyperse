@@ -4,7 +4,7 @@ import pluginReactHooks from 'eslint-plugin-react-hooks';
 import globals from 'globals';
 
 const reactPatterns = {
-  files: ['*.{jsx,tsx}'],
+  files: ['**/*.{jsx,tsx}'],
 };
 
 export const react = defineFlatConfig([
