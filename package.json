@@ -31,6 +31,10 @@
       "import": "./dist/main/base.js",
       "types": "./dist/main/base.d.ts"
     },
+    "./sonarjs": {
+      "import": "./dist/main/sonarjs.js",
+      "types": "./dist/main/sonarjs.d.ts"
+    },
     "./reactjs": {
       "import": "./dist/main/reactjs.js",
       "types": "./dist/main/reactjs.d.ts"

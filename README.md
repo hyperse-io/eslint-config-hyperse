@@ -29,6 +29,7 @@ These are the ESLint and Prettier settings for a Next.js project ⚡️
   - [Extends tsconfig.json](#extends-tsconfigjson)
   - [If you use Next.js](#if-you-use-nextjs)
   - [If you use React.js](#if-you-use-reactjs)
+  - [If you use SonarJS](#if-you-use-sonarjs)
   - [If you use VS Code](#if-you-use-vs-code)
 
 ## What it does
@@ -155,6 +156,25 @@ export default defineConfig([
   {
     rules: {
       '@typescript-eslint/no-explicit-any': 'off',
+    },
+  },
+]);
+```
+
+## If you use SonarJS
+
+You can also add additional rules for SonarJS.
+
+```ts
+import { defineConfig, sonarjs } from '@hyperse/eslint-config-hyperse';
+
+export default defineConfig([
+  // ...typescript
+  ...sonarjs,
+  {
+    rules: {
+      'sonarjs/fixme-tag': 'warn',
+      'sonarjs/todo-tag': 'warn',
     },
   },
 ]);

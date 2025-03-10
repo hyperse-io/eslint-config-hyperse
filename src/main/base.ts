@@ -5,7 +5,6 @@ import {
   mdx,
   prettier,
   regexp,
-  sonar,
   typescript,
   vitest,
 } from '../rules/index.js';
@@ -17,7 +16,6 @@ export const base = defineFlatConfig([
   ...imports,
   ...prettier,
   ...regexp,
-  ...sonar,
   ...jsonc,
   ...mdx,
   ...overrides,

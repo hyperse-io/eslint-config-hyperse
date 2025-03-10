@@ -35,6 +35,12 @@ async function buildAll() {
       dts: true,
       clean: false,
     },
+    'src/main/sonarjs.ts': {
+      format: ['esm'],
+      outputEntry: 'main/sonarjs',
+      dts: true,
+      clean: false,
+    },
   };
 
   for (const [key, value] of Object.entries(entries)) {
