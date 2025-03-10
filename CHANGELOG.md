@@ -1,5 +1,11 @@
 # @hyperse/eslint-config-hyperse
 
+## 1.3.0
+
+### Minor Changes
+
+- [`1e23efb`](https://github.com/hyperse-io/eslint-config-hyperse/commit/1e23efbfb64f4e5a8b0c6387d187b7f6341f1e61) Thanks [@tianyingchun](https://github.com/tianyingchun)! - upgrade sonarjs, fix file includes patten
+
 ## 1.2.11
 
 ### Patch Changes
