@@ -248,3 +248,7 @@ export default defineConfig([
   },
 ]);
 ```
+
+## The react eslint rules can be found here
+
+https://github.com/hyperse-io/eslint-config-hyperse/blob/1e23efbfb64f4e5a8b0c6387d187b7f6341f1e61/src/rules/react.ts
