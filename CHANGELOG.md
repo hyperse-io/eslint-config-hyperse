@@ -1,5 +1,11 @@
 # @hyperse/eslint-config-hyperse
 
+## 1.3.2
+
+### Patch Changes
+
+- [`878b710`](https://github.com/hyperse-io/eslint-config-hyperse/commit/878b7104b6139d4bfa6e8d1af61762db52b4a2d3) Thanks [@tianyingchun](https://github.com/tianyingchun)! - fix wrong eslint react rules
+
 ## 1.3.1
 
 ### Patch Changes
