@@ -1,5 +1,11 @@
 # @hyperse/eslint-config-hyperse
 
+## 1.3.5
+
+### Patch Changes
+
+- [#35](https://github.com/hyperse-io/eslint-config-hyperse/pull/35) [`0a24d1b`](https://github.com/hyperse-io/eslint-config-hyperse/commit/0a24d1ba0207511ceedc267e6b907ca849106242) Thanks [@tclxshunquan-wang](https://github.com/tclxshunquan-wang)! - fix eslint-mdx import error
+
 ## 1.3.4
 
 ### Patch Changes
