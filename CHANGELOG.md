@@ -1,5 +1,11 @@
 # @hyperse/eslint-config-hyperse
 
+## 1.3.6
+
+### Patch Changes
+
+- [`eca8c4a`](https://github.com/hyperse-io/eslint-config-hyperse/commit/eca8c4a042922ff257e276870f9e474d01ab7aaa) Thanks [@tianyingchun](https://github.com/tianyingchun)! - disable sorna rules, move tailwindcss out to improve performance
+
 ## 1.3.5
 
 ### Patch Changes
