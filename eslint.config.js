@@ -1,9 +1,8 @@
-import { base, defineConfig, sonarjs, tailwindcss } from './dist/index.js';
+import { base, defineConfig, sonarjs } from './dist/index.js';
 
 export default defineConfig([
   // ...typescript
   ...base,
-  ...tailwindcss,
   ...sonarjs,
   {
     rules: {

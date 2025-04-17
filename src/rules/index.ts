@@ -6,6 +6,5 @@ export * from './prettier.js';
 export * from './react.js';
 export * from './regexp.js';
 export * from './sonar.js';
-export * from './tailwind.js';
 export * from './typescript.js';
 export * from './vitest.js';

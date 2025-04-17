@@ -248,31 +248,18 @@ export default defineConfig([
 
 - If you want to extends `tailwindcss` rules, you may need to configure as below
 
-```ts
-import {
-  base,
-  defineConfig,
-  tailwindcss,
-} from '@hyperse/eslint-config-hyperse';
+create `.prettierrc` file and setup as below
 
-export default defineConfig([
-  // ...typescript
-  ...base,
-  ...tailwindcss,
-  {
-    rules: {
-      '@typescript-eslint/no-explicit-any': 'off',
-      'tailwindcss/classnames-order': 'warn',
-      'tailwindcss/enforces-negative-arbitrary-values': 'warn',
-      'tailwindcss/enforces-shorthand': 'warn',
-      'tailwindcss/migration-from-tailwind-2': 'warn',
-      'tailwindcss/no-arbitrary-value': 'off',
-      'tailwindcss/no-custom-classname': 'warn',
-      'tailwindcss/no-contradicting-classname': 'error',
-    },
-  },
-]);
+```json
+// .prettierrc
+{
+  "tailwindStylesheet": "./src/app.css"
+}
 ```
+
+Sorting classes in function calls support
+
+`tailwindFunctions: ['tw', 'clsx'],`
 
 ## The react eslint rules can be found here
 

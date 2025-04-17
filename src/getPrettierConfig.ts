@@ -22,9 +22,13 @@ const prettierBaseConfig = {
   overrides: [],
 } satisfies Config;
 
-export const getPrettierConfig = (config: Config = {}) => {
+export const getPrettierConfig = (config: Config = {}): Config => {
   return {
     ...prettierBaseConfig,
     ...config,
+    // highlight priority on .prettierrc
+    tailwindFunctions: ['tw', 'clsx'],
+
+    plugins: ['prettier-plugin-tailwindcss'],
   };
 };
