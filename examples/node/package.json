@@ -2,6 +2,7 @@
   "name": "test-node",
   "version": "1.0.1",
   "type": "module",
+  "private": true,
   "scripts": {
     "build": "rimraf dist && tsc -p ./tsconfig.build.json",
     "lint": "eslint . --ext .ts,.mts,.tsx,.js,.jsx,.cjs,.mjs --cache --cache-location ../../.cache/eslint/commander.eslintcache"
