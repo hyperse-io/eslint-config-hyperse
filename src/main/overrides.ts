@@ -30,6 +30,8 @@ export const overrides = defineFlatConfig([
         'error',
         { disallowTypeAnnotations: false },
       ],
+      // Use this rule instead of `sonarjs/deprecation`
+      '@typescript-eslint/no-deprecated': 'warn',
     },
   } as FlatESLintConfig,
 ]);

@@ -249,11 +249,16 @@ export default defineConfig([
 - If you want to extends `tailwindcss` rules, you may need to configure as below
 
 ```ts
-import { base, defineConfig } from '@hyperse/eslint-config-hyperse';
+import {
+  base,
+  defineConfig,
+  tailwindcss,
+} from '@hyperse/eslint-config-hyperse';
 
 export default defineConfig([
   // ...typescript
   ...base,
+  ...tailwindcss,
   {
     rules: {
       '@typescript-eslint/no-explicit-any': 'off',

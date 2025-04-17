@@ -31,6 +31,11 @@ export const sonar = defineFlatConfig([
       'sonarjs/no-nested-conditional': 'off',
       'sonarjs/fixme-tag': 'warn',
       'sonarjs/todo-tag': 'warn',
+      // NOTE: performance issue for this rule
+      // https://community.sonarsource.com/t/eslint-plugin-sonarjs-performance-issues-on-large-codebase/138392
+      'sonarjs/no-commented-code': 'off',
+      // NOTE: This rule has performance issue and now use `@typescript-eslint/no-deprecated` instead
+      'sonarjs/deprecation': 'off',
     },
   },
 ]);

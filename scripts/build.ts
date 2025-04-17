@@ -41,6 +41,12 @@ async function buildAll() {
       dts: true,
       clean: false,
     },
+    'src/main/tailwindcss.ts': {
+      format: ['esm'],
+      outputEntry: 'main/tailwindcss',
+      dts: true,
+      clean: false,
+    },
   };
 
   for (const [key, value] of Object.entries(entries)) {
