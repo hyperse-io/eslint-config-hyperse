@@ -226,40 +226,52 @@ we need to disable vscode editor language formatter for `json, jsonc`
 
 - If you want to customize the prettier config, you may need to configure as below
 
-```ts
-import {
-  defineConfig,
-  getPrettierConfig,
-  reactjs,
-} from '@hyperse/eslint-config-hyperse';
+```js
+/**
+ * prettier.config.mjs
+ * @see https://prettier.io/docs/configuration
+ * @type {import("prettier").Config}
+ */
+const config = {
+  ....
+};
 
-export default defineConfig([
-  ...reactjs,
-  {
-    rules: {
-      'prettier/prettier': [
-        'error',
-        { ...getPrettierConfig(), printWidth: 120 },
-      ],
-    },
-  },
-]);
+export default config;
+```
+
+- The default options has high priority as below
+
+```json
+{
+  // use single quotes instead of double quotes
+  "singleQuote": true,
+  // add semicolons at the end of statements
+  "semi": true,
+  // add trailing commas where valid in ES5 (objects, arrays, etc.)
+  "trailingComma": "es5",
+  // maintain the line endings of the file
+  "endOfLine": "auto"
+}
 ```
 
 - If you want to extends `tailwindcss` rules, you may need to configure as below
 
-create `.prettierrc` file and setup as below
+```js
+/**
+ * prettier.config.mjs
+ * @see https://prettier.io/docs/configuration
+ * @type {import("prettier").Config}
+ */
+const config = {
+  tailwindStylesheet: './src/app.css',
+};
 
-```json
-// .prettierrc
-{
-  "tailwindStylesheet": "./src/app.css"
-}
+export default config;
 ```
 
 Sorting classes in function calls support
 
-`tailwindFunctions: ['tw', 'clsx'],`
+`tailwindFunctions: ['tw', 'clsx','twMerge'],`
 
 ## The react eslint rules can be found here
 
