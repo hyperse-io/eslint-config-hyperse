@@ -1,5 +1,12 @@
 # test-node
 
+## 1.0.2
+
+### Patch Changes
+
+- Updated dependencies [[`dc436ed`](https://github.com/hyperse-io/eslint-config-hyperse/commit/dc436ed4529d7f87d31c11fefcdd3bedb87142fb)]:
+  - @hyperse/eslint-config-hyperse@1.4.1
+
 ## 1.0.1
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @hyperse/eslint-config-hyperse
 
+## 1.4.1
+
+### Patch Changes
+
+- [`dc436ed`](https://github.com/hyperse-io/eslint-config-hyperse/commit/dc436ed4529d7f87d31c11fefcdd3bedb87142fb) Thanks [@tianyingchun](https://github.com/tianyingchun)! - refactor prettier, allow user customize most of default configuration
+
 ## 1.4.0
 
 ### Minor Changes
