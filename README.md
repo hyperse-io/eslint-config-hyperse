@@ -200,6 +200,24 @@ Once you have done. You probably want your editor to lint and fix for you.
   },
   "[json]": {
     "editor.formatOnSave": false
+  },
+  "eslint.workingDirectories": [
+    "./apps/docs",
+    "./apps/web",
+    "./packages/core",
+    "./packages/utils"
+  ],
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "tailwindCSS.classFunctions": ["tw", "clsx", "twMerge", "extendVariants"],
+  "tailwindCSS.classAttributes": ["className", "classNames"],
+  "tailwindCSS.experimental.configFile": {
+    "apps/web/src/app/globals.css": "apps/web/src/**",
+    "apps/docs/src/app/globals.css": "apps/docs/src/**"
   }
 }
 ```
@@ -254,16 +272,27 @@ export default config;
 }
 ```
 
-- If you want to extends `tailwindcss` rules, you may need to configure as below
+- If you want to extends `tailwindcss` rules, recommended configurations as below
 
-```js
+```tsx
 /**
  * prettier.config.mjs
  * @see https://prettier.io/docs/configuration
  * @type {import("prettier").Config}
  */
 const config = {
-  tailwindStylesheet: './src/app.css',
+  /**
+   * Path to the CSS stylesheet used by Tailwind CSS (v4+)
+   */
+  tailwindStylesheet: './src/app/globals.css',
+  /**
+   * List of custom function and tag names that contain classes.
+   */
+  tailwindFunctions: ['tw', 'clsx', 'twMerge', 'extendVariants'],
+  /**
+   * List of custom attributes that contain classes.
+   */
+  tailwindAttributes: ['className', 'classNames'],
 };
 
 export default config;

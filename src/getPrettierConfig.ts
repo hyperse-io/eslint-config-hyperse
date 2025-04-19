@@ -16,8 +16,6 @@ export const getPrettierConfig = (config: Config = {}): Config => {
     ...prettierBaseConfig,
     ...config,
     // highlight priority on .prettierrc
-    tailwindFunctions: ['tw', 'clsx', 'twMerge'],
-
     plugins: ['prettier-plugin-tailwindcss'],
   };
 };
