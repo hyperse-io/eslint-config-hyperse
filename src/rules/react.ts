@@ -25,6 +25,11 @@ export const react = defineFlatConfig([
       'react-hooks/exhaustive-deps': 'off',
       'react/prop-types': 'off',
     },
+    settings: {
+      react: {
+        version: 'detect', // Automatically detect React version
+      },
+    },
   },
   {
     files: reactPatterns.files,
