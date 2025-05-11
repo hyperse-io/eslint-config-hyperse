@@ -259,16 +259,14 @@ export default config;
 
 - The default options has high priority as below
 
-```json
+```ts
 {
-  // use single quotes instead of double quotes
-  "singleQuote": true,
   // add semicolons at the end of statements
   "semi": true,
+    // use single quotes instead of double quotes
+  "singleQuote": true,
   // add trailing commas where valid in ES5 (objects, arrays, etc.)
   "trailingComma": "es5",
-  // maintain the line endings of the file
-  "endOfLine": "auto"
 }
 ```
 
