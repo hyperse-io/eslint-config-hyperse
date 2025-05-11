@@ -1,5 +1,11 @@
 # @hyperse/eslint-config-hyperse
 
+## 1.4.4
+
+### Patch Changes
+
+- [`ed20744`](https://github.com/hyperse-io/eslint-config-hyperse/commit/ed2074492ffcf9119c68dd485b5f2d5b9787d0a6) Thanks [@tianyingchun](https://github.com/tianyingchun)! - add `react version detect`
+
 ## 1.4.3
 
 ### Patch Changes
