@@ -1,5 +1,12 @@
 # test-react
 
+## 1.0.4
+
+### Patch Changes
+
+- Updated dependencies [[`f7195e6`](https://github.com/hyperse-io/eslint-config-hyperse/commit/f7195e627adbd0525e1236b2f0ff3ec1a9d1f4ed)]:
+  - @hyperse/eslint-config-hyperse@1.4.3
+
 ## 1.0.3
 
 ### Patch Changes

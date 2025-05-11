@@ -1,5 +1,11 @@
 # @hyperse/eslint-config-hyperse
 
+## 1.4.3
+
+### Patch Changes
+
+- [`f7195e6`](https://github.com/hyperse-io/eslint-config-hyperse/commit/f7195e627adbd0525e1236b2f0ff3ec1a9d1f4ed) Thanks [@tianyingchun](https://github.com/tianyingchun)! - add `.conentlayer,.min` as default eslint ignore patterns
+
 ## 1.4.2
 
 ### Patch Changes
