@@ -23,6 +23,8 @@ export const getDefaultIgnorePatterns = (ignores: string[] = []) => {
     '**/storybook-static',
     '**/miniprogram',
     '**/.husky',
+    '**/.contentlayer',
+    '**/.mini',
     ...ignores,
   ];
 };
