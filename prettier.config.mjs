@@ -2,8 +2,6 @@
  * @see https://prettier.io/docs/configuration
  * @type {import("prettier").Config}
  */
-const config = {
-  //
-};
+const config = {};
 
 export default config;

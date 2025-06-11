@@ -15,62 +15,57 @@
   </a>
 </p>
 
-🛠 These are my settings for TypeScript / ESLint / Prettier in a project, also support mono / esm 📦
+🛠 A comprehensive ESLint and Prettier configuration for TypeScript projects, with support for monorepos and ESM. Optimized for Next.js and React applications. ⚡️
 
-These are the ESLint and Prettier settings for a Next.js project ⚡️
+## Features
 
-# Table of Contents
+- 🎯 **TypeScript & JavaScript Linting**: Latest standards-based linting for both TypeScript and JavaScript
+- 🔧 **Multiple Config Presets**: Ready-to-use configurations for `react`, `hooks`, `next`, and more
+- 📝 **Shared TypeScript Config**: Pre-configured `tsconfig.json` for consistent TypeScript settings
+- 💅 **Prettier Integration**: Automatic code formatting with sensible defaults
+- ♿️ **Accessibility**: Built-in rules for JSX accessibility
+- 📦 **Monorepo Support**: Optimized for monorepo setups
+- 🔄 **Module Support**: Full compatibility with both ESM and CommonJS
+- 🎨 **Tailwind CSS**: Built-in support for Tailwind CSS class sorting
+- 🔍 **SonarJS**: Optional integration for code quality rules
 
-- [Eslint / Prettier Setup of @hyperse 📦](#eslint--prettier-setup-of-hyperse)
-- [Table of Contents](#table-of-contents)
-  - [What it does](#what-it-does)
-  - [Local / Per Project Install](#local--per-project-install)
-  - [Scripts](#scripts)
-  - [Extends tsconfig.json](#extends-tsconfigjson)
-  - [If you use Next.js](#if-you-use-nextjs)
-  - [If you use React.js](#if-you-use-reactjs)
-  - [If you use SonarJS](#if-you-use-sonarjs)
-  - [If you use VS Code](#if-you-use-vs-code)
+# Installation & Configuration
 
-## What it does
+## Basic Setup
 
-- Lints JavaScript / TypeScript based on the latest standards
-- Multiple configs `react` `hooks` `next`..
-- Shared `tsconfig.json`
-- Fixes issues and formatting errors with Prettier
-- Check for accessibility rules on JSX elements.
+1. Initialize your project (if needed):
 
-## Local / Per Project Install
+   ```bash
+   npm init
+   ```
 
-1. If you don't already have a `package.json` file, create one with `npm init`.
+2. Install the ESLint config:
 
-2. Then we need to install the config:
+   ```bash
+   npm i -D @hyperse/eslint-config-hyperse
+   ```
 
-```
-npm i -D @hyperse/eslint-config-hyperse
-```
+3. Create ESLint configuration:
 
-1. Create a `eslint.config.js` file in the root of your project's directory (it should live where package.json does). Your `eslint.config.js` file should look like this:
-2. if you are using `commonjs`, just change `eslint.config.js` to `eslint.config.mjs`
-3. Extends your config with the minimal base of `@hyperse` config :
+   - Create `eslint.config.js` (or `eslint.config.mjs` for CommonJS) in your project root
+   - Add the base configuration:
 
-```ts
-import { base, defineConfig } from '@hyperse/eslint-config-hyperse';
+   ```ts
+   import { base, defineConfig } from '@hyperse/eslint-config-hyperse';
 
-export default defineConfig([
-  // ...typescript
-  ...base,
-  {
-    rules: {
-      '@typescript-eslint/no-explicit-any': 'off',
-    },
-  },
-]);
-```
+   export default defineConfig([
+     ...base,
+     {
+       rules: {
+         '@typescript-eslint/no-explicit-any': 'off',
+       },
+     },
+   ]);
+   ```
 
-### Extends tsconfig.json
+## TypeScript Configuration
 
-you can write you `tsconfig.json` via extends `@hyperse/eslint-config-hyperse/tsconfig.base.json`
+### Base Configuration (`tsconfig.json`)
 
 ```json
 {
@@ -87,7 +82,7 @@ you can write you `tsconfig.json` via extends `@hyperse/eslint-config-hyperse/ts
 }
 ```
 
-write you `tsconfig.build.json` as below
+### Build Configuration (`tsconfig.build.json`)
 
 ```json
 {
@@ -103,9 +98,9 @@ write you `tsconfig.build.json` as below
 }
 ```
 
-### Scripts
+## Available Scripts
 
-You can add two scripts to your package.json to lint and/or fix your code:
+Add to your `package.json`:
 
 ```json
 {
@@ -116,6 +111,8 @@ You can add two scripts to your package.json to lint and/or fix your code:
 }
 ```
 
+Or for JavaScript-only projects:
+
 ```json
 {
   "scripts": {
@@ -125,15 +122,14 @@ You can add two scripts to your package.json to lint and/or fix your code:
 }
 ```
 
-## If you use Next.js
+## Framework-Specific Configurations
 
-You can also add additional rules for Next.js
+### Next.js
 
 ```ts
 import { defineConfig, nextjs } from '@hyperse/eslint-config-hyperse';
 
 export default defineConfig([
-  // ...typescript
   ...nextjs,
   {
     rules: {
@@ -143,15 +139,12 @@ export default defineConfig([
 ]);
 ```
 
-## If you use React.js
-
-You can also add additional rules for only React.js ecosystem (without Next.js).
+### React.js (without Next.js)
 
 ```ts
 import { defineConfig, reactjs } from '@hyperse/eslint-config-hyperse';
 
 export default defineConfig([
-  // ...typescript
   ...reactjs,
   {
     rules: {
@@ -161,15 +154,12 @@ export default defineConfig([
 ]);
 ```
 
-## If you use SonarJS
-
-You can also add additional rules for SonarJS.
+### SonarJS Integration
 
 ```ts
 import { defineConfig, sonarjs } from '@hyperse/eslint-config-hyperse';
 
 export default defineConfig([
-  // ...typescript
   ...sonarjs,
   {
     rules: {
@@ -180,12 +170,11 @@ export default defineConfig([
 ]);
 ```
 
-## If you use VS Code
+## VS Code Integration
 
-Once you have done. You probably want your editor to lint and fix for you.
+1. Install the [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
-1. Install the [ESLint package](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-2. Now we need to setup some VS Code settings. Create a `.vscode` folder at your root project, and create a `settings.json` file in this folder. Then, add this little config:
+2. Configure VS Code settings (`.vscode/settings.json`):
 
 ```json
 {
@@ -195,12 +184,8 @@ Once you have done. You probably want your editor to lint and fix for you.
     "source.fixAll": "explicit",
     "source.organizeImports": "never"
   },
-  "[jsonc]": {
-    "editor.formatOnSave": false
-  },
-  "[json]": {
-    "editor.formatOnSave": false
-  },
+  "[jsonc]": { "editor.formatOnSave": false },
+  "[json]": { "editor.formatOnSave": false },
   "eslint.workingDirectories": [
     "./apps/docs",
     "./apps/web",
@@ -222,84 +207,52 @@ Once you have done. You probably want your editor to lint and fix for you.
 }
 ```
 
-## Notes
+## Additional Configuration
 
-we need to disable vscode editor language formatter for `json, jsonc`
+### Prettier Configuration
 
-```json
-{
-  "[jsonc]": {
-    "editor.formatOnSave": false
-  },
-  "[json]": {
-    "editor.formatOnSave": false
-  }
-}
-```
-
-1. Isolated Modules - isolatedModules (default:`true`)
-2. Verbatim Module Syntax - verbatimModuleSyntax (default:`true`)
-
-## References
-
-- If you want to customize the prettier config, you may need to configure as below
+Create `prettier.config.mjs`:
 
 ```js
 /**
- * prettier.config.mjs
  * @see https://prettier.io/docs/configuration
  * @type {import("prettier").Config}
  */
 const config = {
-  ....
+  semi: true,
+  singleQuote: true,
+  trailingComma: 'es5',
+  // ... your custom config
 };
 
 export default config;
 ```
 
-- The default options has high priority as below
+### Tailwind CSS Integration
+
+1. Add type support in `types.d/global.d.ts`:
 
 ```ts
-{
-  // add semicolons at the end of statements
-  "semi": true,
-    // use single quotes instead of double quotes
-  "singleQuote": true,
-  // add trailing commas where valid in ES5 (objects, arrays, etc.)
-  "trailingComma": "es5",
-}
+import 'prettier';
+import 'prettier-plugin-tailwindcss';
 ```
 
-- If you want to extends `tailwindcss` rules, recommended configurations as below
+2. Configure Tailwind in `prettier.config.mjs`:
 
-```tsx
-/**
- * prettier.config.mjs
- * @see https://prettier.io/docs/configuration
- * @type {import("prettier").Config}
- */
+```ts
 const config = {
-  /**
-   * Path to the CSS stylesheet used by Tailwind CSS (v4+)
-   */
   tailwindStylesheet: './src/app/globals.css',
-  /**
-   * List of custom function and tag names that contain classes.
-   */
   tailwindFunctions: ['tw', 'clsx', 'twMerge', 'extendVariants'],
-  /**
-   * List of custom attributes that contain classes.
-   */
   tailwindAttributes: ['className', 'classNames'],
 };
 
 export default config;
 ```
 
-Sorting classes in function calls support
+## Important Notes
 
-`tailwindFunctions: ['tw', 'clsx','twMerge'],`
-
-## The react eslint rules can be found here
-
-https://github.com/hyperse-io/eslint-config-hyperse/blob/1e23efbfb64f4e5a8b0c6387d187b7f6341f1e61/src/rules/react.ts
+- TypeScript settings:
+  - `isolatedModules`: true (default)
+  - `verbatimModuleSyntax`: true (default)
+- JSON/JSONC files: VS Code formatting is disabled by default
+- React ESLint rules: See [source code](https://github.com/hyperse-io/eslint-config-hyperse/blob/1e23efbfb64f4e5a8b0c6387d187b7f6341f1e61/src/rules/react.ts)
