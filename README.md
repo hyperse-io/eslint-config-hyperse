@@ -46,7 +46,6 @@
    ```
 
 3. Create ESLint configuration:
-
    - Create `eslint.config.js` (or `eslint.config.mjs` for CommonJS) in your project root
    - Add the base configuration:
 
