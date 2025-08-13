@@ -1,5 +1,14 @@
 # test-react
 
+## 1.0.7
+
+### Patch Changes
+
+- [`f4fc544`](https://github.com/hyperse-io/eslint-config-hyperse/commit/f4fc544ba4cb59b39fc7fd484f49eb6438c48692) Thanks [@tianyingchun](https://github.com/tianyingchun)! - bump typescript-eslint to support ts 4.9
+
+- Updated dependencies [[`f4fc544`](https://github.com/hyperse-io/eslint-config-hyperse/commit/f4fc544ba4cb59b39fc7fd484f49eb6438c48692)]:
+  - @hyperse/eslint-config-hyperse@1.4.6
+
 ## 1.0.6
 
 ### Patch Changes
