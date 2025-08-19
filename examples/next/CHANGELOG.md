@@ -1,5 +1,11 @@
 # test-next
 
+## 1.0.4
+
+### Patch Changes
+
+- [`261ff38`](https://github.com/hyperse-io/eslint-config-hyperse/commit/261ff385b29364db2fe5349094093fce956d2ff0) Thanks [@tianyingchun](https://github.com/tianyingchun)! - update dependencies and enhance README with performance considerations
+
 ## 1.0.3
 
 ### Patch Changes
