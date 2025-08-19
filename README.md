@@ -255,3 +255,13 @@ export default config;
   - `verbatimModuleSyntax`: true (default)
 - JSON/JSONC files: VS Code formatting is disabled by default
 - React ESLint rules: See [source code](https://github.com/hyperse-io/eslint-config-hyperse/blob/1e23efbfb64f4e5a8b0c6387d187b7f6341f1e61/src/rules/react.ts)
+
+### Performance Considerations
+
+The following ESLint rules may impact performance during linting/formatting:
+
+- `prettier/prettier`: Can be slow on large files due to full reformatting
+- `@typescript-eslint/no-deprecated`: Requires type information which increases checking time
+- `sonarjs/arguments-order`: Complex analysis of function argument usage patterns
+
+Consider selectively disabling these rules for specific files if performance becomes an issue.
