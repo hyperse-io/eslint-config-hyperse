@@ -1,5 +1,14 @@
 # test-react
 
+## 1.0.8
+
+### Patch Changes
+
+- [`261ff38`](https://github.com/hyperse-io/eslint-config-hyperse/commit/261ff385b29364db2fe5349094093fce956d2ff0) Thanks [@tianyingchun](https://github.com/tianyingchun)! - update dependencies and enhance README with performance considerations
+
+- Updated dependencies [[`261ff38`](https://github.com/hyperse-io/eslint-config-hyperse/commit/261ff385b29364db2fe5349094093fce956d2ff0)]:
+  - @hyperse/eslint-config-hyperse@1.4.7
+
 ## 1.0.7
 
 ### Patch Changes
