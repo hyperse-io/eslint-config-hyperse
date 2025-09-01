@@ -25,23 +25,28 @@
   "exports": {
     ".": {
       "import": "./index.js",
-      "types": "./dist/index.d.ts"
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
     },
     "./base": {
       "import": "./dist/main/base.js",
-      "types": "./dist/main/base.d.ts"
+      "types": "./dist/main/base.d.ts",
+      "default": "./dist/main/base.js"
     },
     "./sonarjs": {
       "import": "./dist/main/sonarjs.js",
-      "types": "./dist/main/sonarjs.d.ts"
+      "types": "./dist/main/sonarjs.d.ts",
+      "default": "./dist/main/sonarjs.js"
     },
     "./reactjs": {
       "import": "./dist/main/reactjs.js",
-      "types": "./dist/main/reactjs.d.ts"
+      "types": "./dist/main/reactjs.d.ts",
+      "default": "./dist/main/reactjs.js"
     },
     "./nextjs": {
       "import": "./dist/main/nextjs.js",
-      "types": "./dist/main/nextjs.d.ts"
+      "types": "./dist/main/nextjs.d.ts",
+      "default": "./dist/main/nextjs.js"
     },
     "./tsconfig.base.json": "./tsconfig.base.json",
     "./package.json": "./package.json"
