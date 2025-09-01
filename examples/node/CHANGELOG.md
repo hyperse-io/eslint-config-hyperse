@@ -1,5 +1,14 @@
 # test-node
 
+## 1.0.9
+
+### Patch Changes
+
+- [`1daee5a`](https://github.com/hyperse-io/eslint-config-hyperse/commit/1daee5a3385d26af33404456051efd801869dee1) Thanks [@tyc15129](https://github.com/tyc15129)! - update yarn and package dependencies to latest versions
+
+- Updated dependencies [[`1daee5a`](https://github.com/hyperse-io/eslint-config-hyperse/commit/1daee5a3385d26af33404456051efd801869dee1), [`11ce183`](https://github.com/hyperse-io/eslint-config-hyperse/commit/11ce1837a616f0b7b2baa4652a7e60188f0776ae)]:
+  - @hyperse/eslint-config-hyperse@1.4.8
+
 ## 1.0.8
 
 ### Patch Changes

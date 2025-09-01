@@ -1,5 +1,11 @@
 # test-next
 
+## 1.0.5
+
+### Patch Changes
+
+- [`1daee5a`](https://github.com/hyperse-io/eslint-config-hyperse/commit/1daee5a3385d26af33404456051efd801869dee1) Thanks [@tyc15129](https://github.com/tyc15129)! - update yarn and package dependencies to latest versions
+
 ## 1.0.4
 
 ### Patch Changes
