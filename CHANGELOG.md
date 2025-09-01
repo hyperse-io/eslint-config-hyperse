@@ -1,5 +1,13 @@
 # @hyperse/eslint-config-hyperse
 
+## 1.4.8
+
+### Patch Changes
+
+- [`1daee5a`](https://github.com/hyperse-io/eslint-config-hyperse/commit/1daee5a3385d26af33404456051efd801869dee1) Thanks [@tyc15129](https://github.com/tyc15129)! - update yarn and package dependencies to latest versions
+
+- [`11ce183`](https://github.com/hyperse-io/eslint-config-hyperse/commit/11ce1837a616f0b7b2baa4652a7e60188f0776ae) Thanks [@tyc15129](https://github.com/tyc15129)! - add default export paths to package.json for better module resolution
+
 ## 1.4.7
 
 ### Patch Changes
