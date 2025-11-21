@@ -18,6 +18,7 @@ export const getDefaultIgnorePatterns = (ignores: string[] = []) => {
     '**/dist',
     '**/public',
     '**/fixtures',
+    '**/hps.manifest.json',
     '**/.storybook',
     '**/.vscode-test',
     '**/storybook-static',
