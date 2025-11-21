@@ -1,5 +1,11 @@
 # @hyperse/eslint-config-hyperse
 
+## 1.4.10
+
+### Patch Changes
+
+- [`6ee4e58`](https://github.com/hyperse-io/eslint-config-hyperse/commit/6ee4e58ec7ce38190f3f63488f7f9a6a6fc0bdde) Thanks [@tianyingchun](https://github.com/tianyingchun)! - update eslint peer dependency version and refactor typescript rule configuration
+
 ## 1.4.9
 
 ### Patch Changes
