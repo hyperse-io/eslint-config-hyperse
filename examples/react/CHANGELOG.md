@@ -1,5 +1,14 @@
 # test-react
 
+## 1.0.10
+
+### Patch Changes
+
+- [`ead9808`](https://github.com/hyperse-io/eslint-config-hyperse/commit/ead9808657f8c959316878a8110a82a4fd39717b) Thanks [@tianyingchun](https://github.com/tianyingchun)! - bump version
+
+- Updated dependencies [[`ead9808`](https://github.com/hyperse-io/eslint-config-hyperse/commit/ead9808657f8c959316878a8110a82a4fd39717b)]:
+  - @hyperse/eslint-config-hyperse@1.4.9
+
 ## 1.0.9
 
 ### Patch Changes

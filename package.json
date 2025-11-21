@@ -1,6 +1,6 @@
 {
   "name": "@hyperse/eslint-config-hyperse",
-  "version": "1.4.8",
+  "version": "1.4.9",
   "description": "🛠 These are settings for TypeScript / ESLint / Prettier in a project",
   "keywords": [
     "hyperse",
