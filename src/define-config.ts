@@ -1,10 +1,10 @@
-import { defineFlatConfig, type FlatESLintConfig } from 'eslint-define-config';
+import { type Config, defineConfig as defineFlatConfig } from 'eslint/config';
 import { getDefaultIgnorePatterns } from './getDefaultIgnorePatterns.js';
 
 export const defineConfig = (
-  config: ReadonlyArray<FlatESLintConfig>,
+  config: Parameters<typeof defineFlatConfig>,
   ignores: string[] = []
-): FlatESLintConfig[] => {
+): Config[] => {
   return defineFlatConfig(
     config.concat({
       ignores: getDefaultIgnorePatterns(ignores),

@@ -1,5 +1,5 @@
 import appRoot from 'app-root-path';
-import { defineFlatConfig } from 'eslint-define-config';
+import { defineConfig } from 'eslint/config';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
 import { getTsconfig } from 'get-tsconfig';
 
@@ -20,7 +20,7 @@ if (tsConfig && tsConfig.config.compilerOptions?.paths) {
   pathsNames = extractPaths(jsConfig.config.compilerOptions.paths);
 }
 
-export const imports = defineFlatConfig([
+export const imports = defineConfig([
   {
     plugins: {
       'simple-import-sort': simpleImportSort,

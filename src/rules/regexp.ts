@@ -1,4 +1,4 @@
-import { defineFlatConfig } from 'eslint-define-config';
+import { defineConfig } from 'eslint/config';
 import regexpPlugin from 'eslint-plugin-regexp';
 
 const regexpPatterns = {
@@ -6,7 +6,7 @@ const regexpPatterns = {
 };
 
 // @see https://github.com/ota-meshi/eslint-plugin-regexp
-export const regexp = defineFlatConfig([
+export const regexp = defineConfig([
   {
     files: regexpPatterns.files,
     plugins: {

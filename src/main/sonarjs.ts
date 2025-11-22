@@ -1,4 +1,4 @@
-import { defineFlatConfig } from 'eslint-define-config';
+import { defineConfig } from 'eslint/config';
 import { sonar } from '../rules/index.js';
 
-export const sonarjs = defineFlatConfig([...sonar]);
+export const sonarjs = defineConfig([...sonar]);

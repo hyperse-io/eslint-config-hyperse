@@ -1,11 +1,11 @@
-import { defineFlatConfig } from 'eslint-define-config';
+import { defineConfig } from 'eslint/config';
 import { getPrettierConfig } from '../getPrettierConfig.js';
 const { ...prettierConfig } = getPrettierConfig();
 import eslintPluginPrettier from 'eslint-plugin-prettier/recommended';
 
-export const prettier = defineFlatConfig([
+export const prettier = defineConfig([
   {
-    ...(eslintPluginPrettier as any),
+    ...eslintPluginPrettier,
     rules: {
       ...eslintPluginPrettier.rules,
       'prettier/prettier': ['error', prettierConfig],

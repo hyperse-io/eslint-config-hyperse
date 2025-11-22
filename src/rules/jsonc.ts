@@ -1,7 +1,7 @@
-import { defineFlatConfig } from 'eslint-define-config';
+import { defineConfig } from 'eslint/config';
 import pluginJsonc from 'eslint-plugin-jsonc';
 
-export const jsonc = defineFlatConfig([
+export const jsonc = defineConfig([
   ...pluginJsonc.configs['flat/recommended-with-jsonc'],
   {
     rules: {

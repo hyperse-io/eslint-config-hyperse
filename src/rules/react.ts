@@ -1,4 +1,4 @@
-import { defineFlatConfig, type LanguageOptions } from 'eslint-define-config';
+import { defineConfig } from 'eslint/config';
 import pluginReact from 'eslint-plugin-react';
 import pluginReactHooks from 'eslint-plugin-react-hooks';
 import globals from 'globals';
@@ -6,13 +6,12 @@ import globals from 'globals';
 const reactPatterns = {
   files: ['**/*.{jsx,tsx}'],
 };
-export const react = defineFlatConfig([
+export const react = defineConfig([
   {
     files: reactPatterns.files,
     ...pluginReact.configs.flat.recommended,
     languageOptions: {
-      ...(pluginReact.configs.flat.recommended
-        .languageOptions as LanguageOptions),
+      ...pluginReact.configs.flat.recommended.languageOptions,
       globals: {
         ...globals.serviceworker,
         ...globals.browser,
@@ -33,7 +32,6 @@ export const react = defineFlatConfig([
     },
   },
   {
-    files: reactPatterns.files,
-    ...pluginReactHooks.configs['recommended-latest'],
+    ...pluginReactHooks.configs.flat['recommended-latest'],
   },
 ]);

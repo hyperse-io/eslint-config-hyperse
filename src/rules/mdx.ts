@@ -1,8 +1,8 @@
-import { defineFlatConfig } from 'eslint-define-config';
+import { defineConfig } from 'eslint/config';
 import * as pluginMdx from 'eslint-plugin-mdx';
 
-export const mdx = defineFlatConfig([
+export const mdx = defineConfig([
   {
-    ...(pluginMdx.flat as any),
+    ...pluginMdx.flat,
   },
 ]);

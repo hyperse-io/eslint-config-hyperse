@@ -1,4 +1,4 @@
-import { defineFlatConfig } from 'eslint-define-config';
+import { defineConfig } from 'eslint/config';
 import {
   imports,
   jsonc,
@@ -10,7 +10,7 @@ import {
 } from '../rules/index.js';
 import { overrides } from './overrides.js';
 
-export const base = defineFlatConfig([
+export const base = defineConfig([
   ...typescript,
   ...vitest,
   ...imports,

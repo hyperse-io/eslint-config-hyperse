@@ -1,8 +1,7 @@
-import type { FlatESLintConfig } from 'eslint-define-config';
-import { defineFlatConfig } from 'eslint-define-config';
+import { defineConfig } from 'eslint/config';
 import tseslint from 'typescript-eslint';
 
-export const overrides = defineFlatConfig([
+export const overrides = defineConfig([
   {
     ...tseslint.configs.base,
     languageOptions: {
@@ -33,5 +32,5 @@ export const overrides = defineFlatConfig([
       // Use this rule instead of `sonarjs/deprecation`
       '@typescript-eslint/no-deprecated': 'warn',
     },
-  } as FlatESLintConfig,
+  },
 ]);

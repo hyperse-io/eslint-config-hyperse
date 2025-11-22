@@ -1,4 +1,4 @@
-import { defineFlatConfig } from 'eslint-define-config';
+import { defineConfig } from 'eslint/config';
 import sonarjs from 'eslint-plugin-sonarjs';
 
 const sonarPatterns = {
@@ -11,7 +11,7 @@ const sonarPatterns = {
 };
 
 // @see https://github.com/SonarSource/eslint-plugin-sonarjs
-export const sonar = defineFlatConfig([
+export const sonar = defineConfig([
   {
     files: sonarPatterns.files,
     ignores: sonarPatterns.excludedFiles,

@@ -1,4 +1,4 @@
-import { defineFlatConfig } from 'eslint-define-config';
+import { defineConfig } from 'eslint/config';
 import pluginVitest from '@vitest/eslint-plugin';
 
 const vitestPatterns = {
@@ -6,7 +6,7 @@ const vitestPatterns = {
 };
 
 // @see https://github.com/veritem/eslint-plugin-vitest
-export const vitest = defineFlatConfig([
+export const vitest = defineConfig([
   {
     files: vitestPatterns.files,
     plugins: {

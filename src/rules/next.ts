@@ -1,7 +1,7 @@
-import { defineFlatConfig } from 'eslint-define-config';
+import { defineConfig } from 'eslint/config';
 import pluginNext from '@next/eslint-plugin-next';
 
-export const next = defineFlatConfig([
+export const next = defineConfig([
   {
     plugins: {
       '@next/next': pluginNext,

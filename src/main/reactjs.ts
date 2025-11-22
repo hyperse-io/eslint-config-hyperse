@@ -1,5 +1,5 @@
-import { defineFlatConfig } from 'eslint-define-config';
+import { defineConfig } from 'eslint/config';
 import { react } from '../rules/index.js';
 import { base } from './base.js';
 
-export const reactjs = defineFlatConfig([...base, ...react]);
+export const reactjs = defineConfig([...base, ...react]);
