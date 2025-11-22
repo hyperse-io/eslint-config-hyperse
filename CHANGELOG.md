@@ -1,5 +1,11 @@
 # @hyperse/eslint-config-hyperse
 
+## 1.5.0
+
+### Minor Changes
+
+- [`0d737c3`](https://github.com/hyperse-io/eslint-config-hyperse/commit/0d737c3c80e9290a03ef2b0238ab46dc25aaff48) Thanks [@tianyingchun](https://github.com/tianyingchun)! - migrate from eslint-define-config to eslint/config for configuration definitions
+
 ## 1.4.10
 
 ### Patch Changes
