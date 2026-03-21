@@ -1,5 +1,16 @@
 # test-node
 
+## 1.1.0
+
+### Minor Changes
+
+- [`cea7386`](https://github.com/hyperse-io/eslint-config-hyperse/commit/cea7386e3c60ed95e978f2f7dcbe02f67e3e1b14) Thanks [@tianyingchun](https://github.com/tianyingchun)! - update dependencies refactor react linter to @eslint-react/eslint-plugin
+
+### Patch Changes
+
+- Updated dependencies [[`cea7386`](https://github.com/hyperse-io/eslint-config-hyperse/commit/cea7386e3c60ed95e978f2f7dcbe02f67e3e1b14)]:
+  - @hyperse/eslint-config-hyperse@1.6.0
+
 ## 1.0.12
 
 ### Patch Changes
