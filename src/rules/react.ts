@@ -1,7 +1,7 @@
 import { defineConfig } from 'eslint/config';
-import pluginReact from 'eslint-plugin-react';
-import pluginReactHooks from 'eslint-plugin-react-hooks';
-import globals from 'globals';
+import tseslint from 'typescript-eslint';
+import eslintJs from '@eslint/js';
+import eslintReact from '@eslint-react/eslint-plugin';
 
 const reactPatterns = {
   files: ['**/*.{jsx,tsx}'],
@@ -9,29 +9,31 @@ const reactPatterns = {
 export const react = defineConfig([
   {
     files: reactPatterns.files,
-    ...pluginReact.configs.flat.recommended,
+    // Extend recommended rule sets from:
+    // 1. ESLint JS's recommended rules
+    // 2. TypeScript ESLint recommended rules
+    // 3. ESLint React's recommended-typescript rules
+    extends: [
+      eslintJs.configs.recommended,
+      tseslint.configs.recommended,
+      eslintReact.configs['recommended-typescript'],
+    ],
     languageOptions: {
-      ...pluginReact.configs.flat.recommended.languageOptions,
-      globals: {
-        ...globals.serviceworker,
-        ...globals.browser,
+      // Use TypeScript ESLint parser for TypeScript files
+      parser: tseslint.parser,
+      parserOptions: {
+        // Enable project service for better TypeScript integration
+        projectService: true,
+        tsconfigRootDir: import.meta.dirname,
       },
     },
     rules: {
-      // The full available rules before can be found here
-      // https://github.com/hyperse-io/eslint-config-hyperse/blob/1e23efbfb64f4e5a8b0c6387d187b7f6341f1e61/src/rules/react.ts
-      ...pluginReact.configs.flat.recommended.rules,
-      'react/react-in-jsx-scope': 'off',
-      'react-hooks/exhaustive-deps': 'off',
-      'react/prop-types': 'off',
+      // Custom rule overrides (modify rule levels or disable rules)
     },
     settings: {
       react: {
         version: 'detect', // Automatically detect React version
       },
     },
-  },
-  {
-    ...pluginReactHooks.configs.flat['recommended-latest'],
   },
 ]);
