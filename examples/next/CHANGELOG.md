@@ -1,5 +1,11 @@
 # test-next
 
+## 1.2.0
+
+### Minor Changes
+
+- [`b4dcec9`](https://github.com/hyperse-io/eslint-config-hyperse/commit/b4dcec9edb944294d8ec31000e42c5c6d4da0fd1) Thanks [@tianyingchun](https://github.com/tianyingchun)! - Support tsconfig without `baseUrl` (TypeScript 6.0)
+
 ## 1.1.0
 
 ### Minor Changes
