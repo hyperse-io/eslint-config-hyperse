@@ -2,15 +2,15 @@ import { existsSync } from 'fs';
 import { rm } from 'fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import type { Format, Options } from 'tsup';
-import { build } from 'tsup';
+import type { Format, InlineConfig } from 'tsdown';
+import { build } from 'tsdown';
 
 const getDirname = (url: string, subDir = '') => {
   return join(dirname(fileURLToPath(url)), subDir);
 };
 
 async function buildAll() {
-  const entries: Record<string, Options & { outputEntry: string }> = {
+  const entries: Record<string, InlineConfig & { outputEntry: string }> = {
     'src/index.ts': {
       format: ['esm', 'cjs'],
       outputEntry: 'index',
@@ -46,7 +46,6 @@ async function buildAll() {
   for (const [key, value] of Object.entries(entries)) {
     const { format, outputEntry, dts, clean } = value;
     await build({
-      splitting: false,
       treeshake: true,
       tsconfig: './tsconfig.build.json',
       entry: {
@@ -54,7 +53,9 @@ async function buildAll() {
       },
       dts,
       clean,
-      format: format as Format[],
+      format: format as Format | Format[],
+      // Align with package.json exports (`.js` / `.cjs`), not `.mjs`.
+      fixedExtension: false,
     });
   }
 }
