@@ -28,7 +28,6 @@
     "isolatedModules": true,
     "verbatimModuleSyntax": true,
     "newLine": "lf",
-    "baseUrl": ".",
     "rootDir": ".",
     "outDir": "dist"
   },

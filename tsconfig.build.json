@@ -1,13 +1,13 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
+    "ignoreDeprecations": "6.0",
     "incremental": false,
     "declaration": true,
     "sourceMap": false,
     "verbatimModuleSyntax": false,
     "outDir": "./dist",
-    "rootDir": "./src",
-    "baseUrl": "./"
+    "rootDir": "./src"
   },
   "include": ["./src/*.ts"]
 }
