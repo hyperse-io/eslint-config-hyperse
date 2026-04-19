@@ -1,5 +1,14 @@
 # test-react
 
+## 1.2.1
+
+### Patch Changes
+
+- [`b1c87d6`](https://github.com/hyperse-io/eslint-config-hyperse/commit/b1c87d65e2d238fbb8233557d2ee4523959913e6) Thanks [@tianyingchun](https://github.com/tianyingchun)! - update dependencies and improve ESLint configuration
+
+- Updated dependencies [[`b1c87d6`](https://github.com/hyperse-io/eslint-config-hyperse/commit/b1c87d65e2d238fbb8233557d2ee4523959913e6)]:
+  - @hyperse/eslint-config-hyperse@1.7.1
+
 ## 1.2.0
 
 ### Minor Changes
