@@ -49,7 +49,17 @@
       "default": "./dist/main/nextjs.js"
     },
     "./tsconfig.base.json": "./tsconfig.base.json",
-    "./package.json": "./package.json"
+    "./package.json": "./package.json",
+    "./definePrettierConfig": {
+      "import": "./dist/definePrettierConfig.js",
+      "types": "./dist/definePrettierConfig.d.ts",
+      "default": "./dist/definePrettierConfig.js"
+    },
+    "./getPrettierConfig": {
+      "import": "./dist/definePrettierConfig.js",
+      "types": "./dist/definePrettierConfig.d.ts",
+      "default": "./dist/definePrettierConfig.js"
+    }
   },
   "workspaces": [
     "examples/*",
@@ -125,7 +135,7 @@
     "eslint": ">=9.39.0",
     "typescript": ">=5.4.3"
   },
-  "packageManager": "yarn@4.13.0",
+  "packageManager": "yarn@4.14.1",
   "engines": {
     "node": ">=20.0.0"
   }

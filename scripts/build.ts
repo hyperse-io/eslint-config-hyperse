@@ -17,6 +17,12 @@ async function buildAll() {
       dts: true,
       clean: true,
     },
+    'src/definePrettierConfig.ts': {
+      format: ['esm'],
+      outputEntry: 'definePrettierConfig',
+      dts: true,
+      clean: false,
+    },
     'src/main/base.ts': {
       format: ['esm'],
       outputEntry: 'main/base',

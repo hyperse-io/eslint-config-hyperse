@@ -210,42 +210,38 @@ export default defineConfig([
 
 ### Prettier Configuration
 
+Use `definePrettierConfig()` so Prettier CLI matches ESLint `prettier/prettier` (base options and `prettier-plugin-tailwindcss`, with the plugin always last when you add more plugins). The name mirrors this package’s `defineConfig` helper for ESLint.
+
 Create `prettier.config.mjs`:
 
 ```js
+import { definePrettierConfig } from '@hyperse/eslint-config-hyperse';
+
 /**
  * @see https://prettier.io/docs/configuration
- * @type {import("prettier").Config}
+ * @see https://github.com/tailwindlabs/prettier-plugin-tailwindcss#installation
  */
-const config = {
-  semi: true,
-  singleQuote: true,
-  trailingComma: 'es5',
-  // ... your custom config
-};
-
-export default config;
+export default definePrettierConfig({
+  // ...your overrides (e.g. Tailwind v4)
+});
 ```
+
+Optional slim import (no ESLint stack): `@hyperse/eslint-config-hyperse/definePrettierConfig` (the legacy path `@hyperse/eslint-config-hyperse/getPrettierConfig` still resolves to the same module).
+
+The previous name `getPrettierConfig` remains exported but is deprecated; prefer `definePrettierConfig`.
 
 ### Tailwind CSS Integration
 
-1. Add type support in `types.d/global.d.ts`:
+Configure Tailwind via `definePrettierConfig` (paths are resolved relative to this config file):
 
-```ts
-import 'prettier';
-import 'prettier-plugin-tailwindcss';
-```
+```js
+import { definePrettierConfig } from '@hyperse/eslint-config-hyperse';
 
-2. Configure Tailwind in `prettier.config.mjs`:
-
-```ts
-const config = {
+export default definePrettierConfig({
   tailwindStylesheet: './src/app/globals.css',
   tailwindFunctions: ['tw', 'clsx', 'twMerge', 'extendVariants'],
   tailwindAttributes: ['className', 'classNames'],
-};
-
-export default config;
+});
 ```
 
 ## Important Notes

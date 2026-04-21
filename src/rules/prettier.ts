@@ -1,6 +1,6 @@
 import { defineConfig } from 'eslint/config';
-import { getPrettierConfig } from '../getPrettierConfig.js';
-const { ...prettierConfig } = getPrettierConfig();
+import { definePrettierConfig } from '../definePrettierConfig.js';
+const { ...prettierConfig } = definePrettierConfig();
 import eslintPluginPrettier from 'eslint-plugin-prettier/recommended';
 
 export const prettier = defineConfig([
