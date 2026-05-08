@@ -26,6 +26,7 @@ export const getDefaultIgnorePatterns = (ignores: string[] = []) => {
     '**/.husky',
     '**/.contentlayer',
     '**/.mini',
+    '**/*.d.ts',
     ...ignores,
   ];
 };
