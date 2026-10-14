@@ -1,5 +1,11 @@
 # @hyperse/eslint-config-hyperse
 
+## 1.7.5
+
+### Patch Changes
+
+- [`fc2469d`](https://github.com/hyperse-io/eslint-config-hyperse/commit/fc2469d19d265759320ab47a163f08df18a11475) Thanks [@tianyingchun](https://github.com/tianyingchun)! - update package dependencies and Yarn version to 4.18.1
+
 ## 1.7.1
 
 ### Patch Changes
