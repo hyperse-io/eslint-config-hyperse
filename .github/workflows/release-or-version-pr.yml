@@ -27,6 +27,12 @@ jobs:
       - name: Install Dependencies
         run: yarn --frozen-lockfile
 
+      # `prettier.config.mjs` imports `./dist/definePrettierConfig.js`, and
+      # changesets formats CHANGELOG.md via prettier while running `version`.
+      # Without the build, prettier fails with exit code 2 and aborts the run.
+      - name: Build
+        run: yarn build
+
       # - name: Unit tests
       #   run: |
       #     yarn test
