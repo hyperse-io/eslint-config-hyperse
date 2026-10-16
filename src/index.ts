@@ -1,6 +1,7 @@
 export * from './define-config.js';
 export * from './definePrettierConfig.js';
 export * from './getDefaultIgnorePatterns.js';
+export * from './getGitignoreIgnorePatterns.js';
 export * from './main/base.js';
 export * from './main/nextjs.js';
 export * from './main/reactjs.js';
