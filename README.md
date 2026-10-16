@@ -294,6 +294,19 @@ export default defineConfig([
 ]);
 ```
 
+> **Keep the `files` selector, and don't enable it with the CLI `--rule` flag.**
+> `--rule` applies to every file ESLint visits, not just TypeScript. Files
+> matched by other configs — `.json` among them — carry no `parserOptions`, so
+> the run aborts with:
+>
+> ```text
+> Error while loading rule '@typescript-eslint/no-deprecated':
+> You have used a rule which requires type information, but don't have
+> parserOptions set to generate type information for this file.
+> ```
+>
+> Configure it in `eslint.config.js` as above instead.
+
 #### `projectService` stays on, and why
 
 `projectService` builds a TypeScript program covering every linted file, and
