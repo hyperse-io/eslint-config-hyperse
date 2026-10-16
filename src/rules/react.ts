@@ -22,7 +22,9 @@ export const react = defineConfig([
       // Use TypeScript ESLint parser for TypeScript files
       parser: tseslint.parser,
       parserOptions: {
-        // Enable project service for better TypeScript integration
+        // Enables the program that `@typescript-eslint/consistent-type-imports`
+        // needs to detect decorator metadata. See `src/main/overrides.ts` for
+        // why this cannot simply be turned off.
         projectService: true,
         tsconfigRootDir: import.meta.dirname,
       },

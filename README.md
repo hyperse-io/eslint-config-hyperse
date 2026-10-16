@@ -257,7 +257,90 @@ export default definePrettierConfig({
 The following ESLint rules may impact performance during linting/formatting:
 
 - `prettier/prettier`: Can be slow on large files due to full reformatting
-- `@typescript-eslint/no-deprecated`: Requires type information which increases checking time
 - `sonarjs/arguments-order`: Complex analysis of function argument usage patterns
 
 Consider selectively disabling these rules for specific files if performance becomes an issue.
+
+#### `@typescript-eslint/no-deprecated` is opt-in
+
+This rule is the only type-aware rule the preset ships, and it is **disabled by
+default** because enabling it is what pushes `eslint .` past the default Node
+heap on larger repositories.
+
+Measured on a ~2k-file monorepo package spanning 4 TS projects, from repeated
+runs against the default Node heap (~4GB):
+
+| configuration                                  | outcome                                                           |
+| ---------------------------------------------- | ----------------------------------------------------------------- |
+| `projectService: true` + `no-deprecated: warn` | `eslint .` exits with `Ineffective mark-compacts near heap limit` |
+| `projectService: true` + `no-deprecated: off`  | completes; needs >3GB of heap                                     |
+
+`TIMING=1` also shows the rule consuming **~27.8s** of rule time — 62% of the
+total, and ~2.3x the next most expensive rule (`prettier/prettier` at ~12.1s).
+
+Re-enable it per project when the repository is small enough to afford it:
+
+```ts
+import { base, defineConfig } from '@hyperse/eslint-config-hyperse';
+
+export default defineConfig([
+  ...base,
+  {
+    files: ['**/*.ts', '**/*.tsx'],
+    rules: {
+      '@typescript-eslint/no-deprecated': 'warn',
+    },
+  },
+]);
+```
+
+#### `projectService` stays on, and why
+
+`projectService` builds a TypeScript program covering every linted file, and
+that program is where the remaining >3GB of heap goes. It is kept enabled
+because `@typescript-eslint/consistent-type-imports` depends on it for
+correctness, not just accuracy.
+
+The rule reads `emitDecoratorMetadata` and `experimentalDecorators` from parser
+services and, when both are set, **skips any file containing a decorator**
+([typescript-eslint#5468](https://github.com/typescript-eslint/typescript-eslint/issues/5468)).
+Imports in those files are still referenced at runtime through `design:type`
+metadata, so rewriting them with `import type` changes behaviour.
+
+Without the program that guard is silently disabled. On the package above,
+turning `projectService` off made the rule report **615 new errors** — e.g. in
+a TypeORM entity where the import is used only in a decorated property:
+
+```ts
+import { StocksEtlJobStatus } from './stocks-enums.js';
+
+@Entity('stocks_etl_job')
+export class StocksEtlJob {
+  @Column({ type: 'varchar' })
+  status: StocksEtlJobStatus; // `emitDecoratorMetadata` emits this at runtime
+}
+```
+
+The suggested autofix would turn that into `import type`, replacing the emitted
+metadata with `Object`. That is why this preset keeps `projectService` on by
+default.
+
+If you want the ~512MB heap instead and do not rely on
+`consistent-type-imports`, turn both off together:
+
+```ts
+import { base, defineConfig } from '@hyperse/eslint-config-hyperse';
+
+export default defineConfig([
+  ...base,
+  {
+    files: ['**/*.ts', '**/*.tsx'],
+    languageOptions: {
+      parserOptions: { projectService: false },
+    },
+    rules: {
+      '@typescript-eslint/consistent-type-imports': 'off',
+    },
+  },
+]);
+```
