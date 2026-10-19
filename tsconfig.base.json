@@ -19,7 +19,15 @@
     "noPropertyAccessFromIndexSignature": false,
     "esModuleInterop": true,
     "useDefineForClassFields": false,
-    "target": "ES2020",
+    "target": "ES2023",
+    "lib": [
+      "ES2023",
+      "DOM",
+      "DOM.Iterable",
+      "DOM.AsyncIterable",
+      "WebWorker.ImportScripts",
+      "ScriptHost"
+    ],
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "resolveJsonModule": true,

@@ -64,6 +64,22 @@
 
 ## TypeScript Configuration
 
+### Compiler defaults
+
+The shared config targets `ES2023` and pins `lib` explicitly to
+`["ES2023", "DOM", "DOM.Iterable", "DOM.AsyncIterable", "WebWorker.ImportScripts", "ScriptHost"]`,
+so the built-in type declarations no longer depend on the `target` default. Projects needing
+newer built-ins can opt in without forking the base config:
+
+```json
+{
+  "extends": "@hyperse/eslint-config-hyperse/tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["ES2024", "DOM", "DOM.Iterable"]
+  }
+}
+```
+
 ### Base Configuration (`tsconfig.json`)
 
 ```json
